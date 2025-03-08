@@ -11,29 +11,31 @@ body {
 }
 
 .hero-heading {
+  padding: 60px 0 40px;
+  max-width: 1200px;
   margin-left: 100px;
-  padding-top: 60px;
 }
 
 .hero-heading h1 {
-  font-size: 90px;
-  width: 1200px;
+  font-size: 4.5rem;
   color: white;
   font-weight: 700;
+  max-width: 1200px;
 }
 
 .hero-heading h3 {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.5rem;
   color: #595959;
+  margin-top: 1rem;
 }
 
 .hero-heading button {
-  padding: 15px 40px 15px 40px;
-  font-size: 18px;
+  padding: 12px 30px;
+  font-size: 16px;
   font-weight: 700;
   border-radius: 14px;
-  margin-top: 35px;
+  margin-top: 25px;
   cursor: pointer;
 }
 
@@ -52,9 +54,10 @@ body {
 }
 
 .card {
-  width: 609px;
-  height: 230px;
-  flex-shrink: 0;
+  width: 100%;
+  max-width: 609px;
+  height: auto;
+  min-height: 230px;
   border-radius: 36px;
   border: 1px solid rgba(255, 255, 255, 0.94);
   background: rgba(255, 255, 255, 0.315);
@@ -64,7 +67,7 @@ body {
   gap: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .image-container {
@@ -98,4 +101,90 @@ body {
   font-weight: 400;
   line-height: normal;
   color: #595959;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+  .hero-heading h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-heading {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-heading h1 {
+    font-size: 3rem;
+  }
+
+  .hero-heading h3 {
+    font-size: 1.25rem;
+  }
+
+  .hero-heading {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-heading {
+    padding: 40px 0 30px;
+    margin-left: 40px;
+  }
+
+  .hero-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 25px;
+  }
+
+  .image-container {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-heading {
+    padding: 30px 0 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .hero-heading h1 {
+    font-size: 2rem;
+  }
+
+  .hero-heading h3 {
+    font-size: 1rem;
+  }
+
+  .hero-heading button {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  #learn-btn {
+    margin-left: 10px;
+  }
+
+  .text-container h2 {
+    font-size: 18px;
+  }
+
+  .text-container p {
+    font-size: 14px;
+  }
 }
