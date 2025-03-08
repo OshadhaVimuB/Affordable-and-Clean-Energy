@@ -12,23 +12,63 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <nav>
-      <img id="navlogo" src="../assets/Globle/Logo.jpg" alt="Logo" />
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Volunteer</a></li>
-        <li><a href="#">Feedback</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Site map</a></li>
-      </ul>
-      <div class="profile">
-        <a href="#profile">
-          <img src="../assets/Globle/User profile.svg" alt="User Profile" />
-        </a>
+    <header>
+      <nav>
+        <img id="navlogo" src="../assets/Globle/Logo.jpg" alt="Logo" />
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Site map</a></li>
+        </ul>
+        <div class="profile">
+          <a href="#profile">
+            <img
+              id="User-profile"
+              src="../assets/Globle/User profile.svg"
+              alt="User Profile"
+            />
+          </a>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero-heading">
+          <h1>Greener Future with Affordable Clean Energy</h1>
+          <h3>
+            Ensure access to affordable, reliable, sustainable and modern energy
+            for all.
+          </h3>
+          <button id="about-btn">About us</button>
+          <button id="learn-btn">learn more</button>
+          <div class="card">
+            <div class="image-container">
+              <img
+                src="../assets/Globle/solar pannels.jpg"
+                alt="Clean Energy"
+              />
+            </div>
+            <div class="text-container">
+              <h2>Powering a Sustainable Future With Clean Energy</h2>
+              <p>
+                Accelerating access to affordable, reliable, and modern energy
+                solutions for a better tomorrow. Discover how our initiatives
+                drive progress towards a greener world.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-    <div class="hero"></div>
+    </header>
+    <script src="../src/js/home.js"></script>
   </body>
 </html>
