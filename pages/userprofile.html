@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../src/styles/globle.css">
     <link rel="stylesheet" href="../src/styles/userprofile.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+
     <title>User Profile</title>
 </head>
 <body>
@@ -38,42 +40,161 @@
     <div class="main-container">
         <section class="userProfile card">
             <div class="userProfile">
-                <figure> <img src="../assets/userprofile/user-icon.png" alt="User's description image"></figure>
-                <h1 class="heading">Trevor Phillips</h1>
-                <h3 class="user-title">Voluteer</h3>
-                <span>Bio</span>
-                <p class="user-bio">Trevor Phillips is a dedicated volunteer supporting SDG 4,<br>SDG 13, and SDG 8. Skilled in IT support, content writing,<br>project coordination, and social media management, he <br>has experience in educational outreach, climate <br>awareness campaigns, and youth development programs.</p>
-                <span>Address</span>
-                <p class="user-address">
-                    180 Ward Place <br> Colombo 10 <br> Sri Lanka.
-                </p>
-            </div>
-
-            <div class="skill-container">
-                <h1 class="heading">Skills</h1>
-                <ul>
-                    <li style="--index-1">Skill1</li>
-                    <li style="--index-2">Skill2</li>
-                    <li style="--index-3">Skill3</li>
-                    <li style="--index-4">Skill4</li>
-                </ul>
+                <figure class="userProfileIcon"> <img src="../assets/userprofile/user-icon.png" alt="User's description image"></figure>
             </div>
         </section>
 
         <section class="userDetails card">
             <div class="userDetails">
-
+                <h1 class="heading">Trevor Phillips</h1>
+                <h3 class="userTitle">Voluteer</h3>
+                <div class="map">
+                    <span class="material-symbols-rounded">location_on</span>
+                    <span>Sri Lanka</span>
+                </div>
+                <span class="bio">Bio</span>
+                <p class="user-bio">Trevor Phillips is a dedicated volunteer supporting SDG 4,SDG 13, and SDG 8. Skilled in IT support, content writing, <br>project coordination, and social media management, he has experience in educational outreach, climate awareness <br> campaigns, and youth development programs.</p>
+                <div class="address">
+                    <span class="address">Address</span>
+                    <p class="user-bio">
+                        180 Ward Place <br> Colombo 10 <br> Sri Lanka.
+                    </p>
+                </div>
             </div>
         </section>
 
         <section class="workSkills card">
             <div class="workSkills">
-
+                <div class="wrapper">
+                    <h1 class="heading">Volunteering Calender</h1>
+                    <div class="header">
+                        <h3 class="calenderHeader">March 2025</h3>
+                        <div class="calenderIcon">
+                            <span class="material-symbols-rounded">chevron_left</span>
+                            <span class="material-symbols-rounded">chevron_right</span>
+                        </div>
+                    </div>
+                    <div class="calender">
+                      <ul class="week">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                      </ul>  
+                      <ul class="days">
+                        <li class="inactive">28</li>
+                        <li class="inactive">29</li>
+                        <li class="inactive">30</li>
+                        <li class="inactive">31</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li class="active">8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li class="active">22</li>
+                        <li class="active">23</li>
+                        <li>24</li>
+                        <li class="active">25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li class="inactive">1</li>
+                      </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="timeLineAbout card">
             <div class="timeLineAbout"></div>
+            <div class="tabs">
+                <ul>
+                    <li class="skills active">
+                        <img src="../assets/userprofile/performance-line.svg" alt="Performance line icon">
+                        <span>Skills</span>
+                    </li>
+                    <li class="goals">
+                        <img src="../assets/userprofile/mage_goals.svg" alt="Goals icon">
+                        <span>Goals</span>
+                    </li>
+                    <li class="experiences">
+                        <img src="../assets/userprofile/user-experince.svg" alt="Experiences icon">
+                        <span>Experiences</span>
+                    </li>
+                    <li class="contactMe">
+                        <img src="../assets/userprofile/connect-without-contact.svg" alt="Contact me icon">
+                        <span>Contact Me</span>
+                    </li>
+                </ul>
+            </div>
+            <section class="skill">
+                <div class="skillContainer">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>
+                            <span>Technical Knowledge</span>
+                            <div class="skillBar">
+                                <div class="skillProgress" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Practical Skills</span>
+                            <div class="skillBar">
+                                <div class="skillProgress" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Community Engagement</span>
+                            <div class="skillBar">
+                                <div class="skillProgress" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Digital & IT Skills</span>
+                            <div class="skillBar">
+                                <div class="skillProgress" style="width: 45%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="golas">
+                <div class="goalContainer">
+                    <h2>Hello world</h2>
+                </div>
+            </section>
+
+
+            <div class="experiencesContatiner">
+                <h2> godd mornig mfs</h2>
+            </div>
+
+            <div class="contactContainer">
+                <h2>Hello world</h2>
+            </div>
+
         </section>
     </div>
     <script src="../src/js/userprofile.js"></script>
