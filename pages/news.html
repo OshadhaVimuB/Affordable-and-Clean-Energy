@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Content page</title>
+        <link rel="stylesheet" href="../src/styles/news.css">
+        <link rel="stylesheet" href="../src/styles/globle.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img id="navlogo" src="../assets/Globle/Logo.jpg" alt="Logo" />
+                <div class="hamburger">
+                  <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                  <li><a href=".//home.html">Home</a></li>
+                  <li><a href="#">Volunteer</a></li>
+                  <li><a href="#">Feedback</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Site map</a></li>
+                </ul>
+                <div class="profile">
+                  <a href="./userprofile.html">
+                    <img
+                      id="User-profile"
+                      src="../assets/Globle/User profile.svg"
+                      alt="User Profile"
+                    />
+                  </a>
+                </div>
+              </nav>
+        </header>
+        <section class="News">
+            <div class="news-header">
+                <h2>News</h2>
+                <div class="dropdown-container">
+                    <button class="years" onclick="toggleDropdown()">Years ▼</button>
+                    <div class="dropdown-content" id="dropdownMenu">
+                        <a href="#" onclick="filterPrograms('2023')">2023</a>
+                        <a href="#" onclick="filterPrograms('2024')">2024</a>            
+                    </div>
+                
+                
+                </div>
+            </div>
+            
+            
+            
+            <div class="program-container">
+
+                <div class="program-card">
+                    <div class="card newest">Energy Revolution</div>
+                    <img src="../assets/news/img1.jpg" alt="Energy Revolution">
+                    <h3>To save the planet, we need a just and fair renewable energy revelution</h3>
+                    <a href="https://www.un.org/en/desa/cop28-save-planet-we-need-just-and-fair-renewable-energy-revolution">
+                        <button class="view-project-btn">Read</button>
+                    </a>
+                    
+                </div>
+                <div class="program-card">
+                    <div class="card newest">Water for climate</div>
+                    <img src="../assets/news/img2.jpg" alt="Water for climate">
+                    <h3>Together Better; Together Stronger</h3>
+                    <a href="https://sdgs.un.org/news/water-key-attain-sustainable-development-prosperity-and-peace-57084">
+                        <button class="view-project-btn" >Read</button>
+                    </a>
+                    
+                </div>
+                <div class="program-card">
+                    <div class="card most-popular">Tackle sustainability.</div>
+                    <img src="../assets/news/img3.png" alt="Solar Sister">
+                    <h3>Synergy solutions for world in crisis</h3>
+                    <a href="https://sdgs.un.org/news/governments-must-seek-win-win-synergies-tackling-climate-and-sustainable-development-crises">
+                        <button class="view-project-btn" >Read</button>
+                    </a>
+                    
+                </div>
+                <div class="program-card">
+                    <div class="card most-popular">Clean Energy Day</div>
+                    <img src="../assets/news/img4.jpeg" alt="Clean Energy Day">
+                    <h3>UN Celebrates the First World Clean Energy Day</h3>
+                    <a href="https://sdgs.un.org/news/un-celebrates-first-world-clean-energy-day-54575">
+                        <button class="view-project-btn" >Read</button>
+                    </a>
+                    
+                </div>
+                
+                
+            </div>
+        </section>
+        <script src="../src/js/news.js"></script>
+    </body>
+</html>
