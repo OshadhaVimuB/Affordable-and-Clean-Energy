@@ -1,0 +1,985 @@
+body {
+    display: flex;justify-content: center;align-items: center; flex-wrap: wrap;font-family: 'Poppins', sans-serif;margin: 0;padding: 0;
+   
+}
+.background_images{
+    background-color: #d0f2fe;
+}    
+.background_images img {
+    width: 100%;
+    margin-top: -260px;
+}
+.box{
+    display: none;
+}
+.box.active {
+    display: block;
+}
+#box_1{height:71vh;
+    width:38vw;
+    justify-content:center;align-items:center;
+    background-color:#fff;position:absolute;border-radius:8%;max-width:600px;max-height:500px;min-width:300px;min-height:250px;display:none}
+
+@media (max-width: 600px) {
+    #box_1 {
+        left: 5vw;  /* Adjust left positioning for smaller screens */
+        top: 15vh;  /* Adjust top positioning for smaller screens */
+        width: 90vw;  /* 80% of viewport width on small screens */
+        height: 63vh; /* 40% of viewport height on small screens */
+    }
+}
+fieldset {
+    border: none;
+    padding: 0; /* Optional removes extra padding inside the fieldset */
+    
+}
+legend{
+    position: absolute;
+    left: 1.8vw;
+    top: 11vh;
+    color: #D2D2D2;
+}
+
+#box_1.active {
+    display: block; /* Show when "Next" is clicked */
+}
+
+
+.content_1{
+    position: absolute;
+    color: black; /* Text color for visibility */
+    font-size: 2vw; /* Font size as a percentage of viewport width */
+    
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 4vh;      /* Top position as a percentage of viewport height */
+
+}
+@media (max-width: 600px) {
+    .content_1 {
+        font-size: 4vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 3vh;         /* Adjust top position */
+    }
+}
+#enter_name{
+    position: absolute;
+    font-size: 1vw; /* Font size as a percentage of viewport width */
+    
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 15vh;
+    
+}
+@media (max-width: 600px) {
+    #enter_name {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 10vh;         /* Adjust top position */
+    }
+}
+#enter_name_input{
+    position: absolute;
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 20vh;
+    width: 32vw;
+    height: 5vh;
+    border:2px solid #D2D2D2;
+    border-radius: 4px;
+}
+@media (max-width: 600px) {
+    #enter_name_input {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 15vh;         /* Adjust top position */
+        width: 80vw;
+        height: 5vh;
+    }
+}
+#enter_email{
+    position: absolute;
+    font-size: 1vw;
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 28vh;
+}
+@media (max-width: 600px) {
+    #enter_email {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 23vh;         /* Adjust top position */
+        
+    }
+}
+#enter_email_input{
+    position: absolute;
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 33vh;
+    width: 32vw;
+    height: 5vh;
+    border:2px solid #D2D2D2;
+    border-radius: 4px;
+}
+@media (max-width: 600px) {
+    #enter_email_input {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 27vh;         /* Adjust top position */
+        width: 80vw;
+        height: 5vh;
+    }
+}
+#Telephone{
+    position: absolute;
+    font-size: 1vw;
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 41vh;
+}
+@media (max-width: 600px) {
+    #Telephone {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 35vh;         /* Adjust top position */
+        
+    }
+}
+#enter_telephone_input{
+    position: absolute;
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 46vh;
+    width: 32vw;
+    height: 5vh;
+    border:2px solid #D2D2D2;
+    border-radius: 4px;
+}
+@media (max-width: 600px) {
+    #enter_telephone_input {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 40vh;         /* Adjust top position */
+        width: 80vw;
+        height: 5vh;
+    }
+}
+.Next{
+    position: absolute;
+    top: 58vh;
+    left: 27.5vw;
+    background-color: #074F6B;
+    border-radius: 5px;
+    width: 7vw;
+    height: 5.5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border:2px solid #074F6B;
+    font-size: 15px; 
+    cursor: pointer;  
+}
+@media (max-width: 600px) {
+    .Next {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 65vw;        /* Adjust left position */
+        top: 50vh;         /* Adjust top position */
+        width: 20vw;
+        height: 5vh;
+    }
+}
+.Back{
+    position: absolute;
+    background-color: white;
+    border:2px solid black;
+    width: 7vw;
+    height: 5.5vh;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-weight: bold;
+    top: 58vh;
+    left: 19vw;
+    cursor: pointer; 
+}
+@media (max-width: 600px) {
+    .Back {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 40vw;        /* Adjust left position */
+        top: 50vh;         /* Adjust top position */
+        width: 20vw;
+        height: 5vh;
+    }
+}
+
+.star_1 {
+    position: absolute;
+    font-size: 15px;
+    color: gold;
+    left: 30px;
+    top: 30px;
+}
+.star_2{
+    position: absolute;
+    font-size: 15px;
+    color: gold;
+    left: 45px;
+    top: 30px;
+}
+.star_3{
+    position: absolute;
+    font-size: 15px;
+    color: gold;
+    left: 60px;
+    top: 30px;
+} 
+.star_4{
+    position: absolute;
+    font-size: 15px;
+    color: gold;
+    left: 75px;
+    top: 30px;
+} 
+.star_5{
+    position: absolute;
+    font-size: 15px;
+    left: 90px;
+    top: 30px;
+    color: whitesmoke;
+} 
+#date_1{
+    position: absolute;
+    top: 50px;
+    left: 32px;
+    font-size: 10px;
+    color:#d2d2d2fc ;
+}
+#box_2{
+    display: flex;
+    height: 71vh;   /* 50% of viewport height */
+    width: 38vw;    /* 60% of viewport width */
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+    position: absolute;
+    
+    border-radius: 8%;
+
+    max-width: 600px;  /* Prevent box from becoming too large */
+    max-height: 500px; /* Prevent box from becoming too large */
+    min-width: 300px;  /* Prevent box from becoming too small */
+    min-height: 250px; /* Prevent box from becoming too small */
+    display: none;
+    
+}
+@media (max-width: 600px) {
+    #box_2 {
+        left: 5vw;  /* Adjust left positioning for smaller screens */
+        top: 15vh;  /* Adjust top positioning for smaller screens */
+        width: 90vw;  /* 80% of viewport width on small screens */
+        height: 63vh; /* 40% of viewport height on small screens */
+    }
+}
+#box_2.active {
+    display: block; /* Show when "Next" is clicked */
+}
+#box_3{
+    display: flex;
+    height: 71vh;   /* 50% of viewport height */
+    width: 38vw;    /* 60% of viewport width */
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+    position: absolute;
+    
+    border-radius: 8%;
+
+    max-width: 600px;  /* Prevent box from becoming too large */
+    max-height: 500px; /* Prevent box from becoming too large */
+    min-width: 300px;  /* Prevent box from becoming too small */
+    min-height: 250px; /* Prevent box from becoming too small */
+    display: none;
+    
+}
+@media (max-width: 600px) {
+    #box_3 {
+        left: 5vw;  /* Adjust left positioning for smaller screens */
+        top: 15vh;  /* Adjust top positioning for smaller screens */
+        width: 90vw;  /* 80% of viewport width on small screens */
+        height: 63vh; /* 40% of viewport height on small screens */
+    }
+}
+#box_3.active {
+    display: block; /* Show when "Next" is clicked */
+}
+#box_4{
+    display: flex;
+    height: 71vh;   /* 50% of viewport height */
+    width: 38vw;    /* 60% of viewport width */
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+    position: absolute;
+    
+    border-radius: 8%;
+
+    max-width: 600px;  /* Prevent box from becoming too large */
+    max-height: 500px; /* Prevent box from becoming too large */
+    min-width: 300px;  /* Prevent box from becoming too small */
+    min-height: 250px; /* Prevent box from becoming too small */
+    display: none;
+    
+}
+@media (max-width: 600px) {
+    #box_4 {
+        left: 5vw;  /* Adjust left positioning for smaller screens */
+        top: 15vh;  /* Adjust top positioning for smaller screens */
+        width: 90vw;  /* 80% of viewport width on small screens */
+        height: 63vh; /* 40% of viewport height on small screens */
+    }
+}
+#box_4.active {
+    display: block; /* Show when "Next" is clicked */
+}
+.Home{
+    position: absolute;
+    top: 330px;
+    left: 230px;
+    background-color: #074F6B;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border:2px solid #074F6B;
+    font-size: 15px;  
+    cursor: pointer;
+}
+#box_5{
+    display: flex;
+    height: 71vh;   /* 50% of viewport height */
+    width: 38vw;    /* 60% of viewport width */
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+    position: absolute;
+    
+    border-radius: 8%;
+
+    max-width: 600px;  /* Prevent box from becoming too large */
+    max-height: 500px; /* Prevent box from becoming too large */
+    min-width: 300px;  /* Prevent box from becoming too small */
+    min-height: 250px; /* Prevent box from becoming too small */
+    display: none;
+}
+@media (max-width: 600px) {
+    #box_5 {
+        left: 5vw;  /* Adjust left positioning for smaller screens */
+        top: 15vh;  /* Adjust top positioning for smaller screens */
+        width: 90vw;  /* 80% of viewport width on small screens */
+        height: 63vh; /* 40% of viewport height on small screens */
+    }
+}
+#box_5.active {
+    display: block; /* Show when "Next" is clicked */
+}
+.enter_add{
+    position: absolute;
+    font-size: 1vw; /* Font size as a percentage of viewport width */
+    
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 15vh;
+}
+@media (max-width: 600px) {
+    .enter_add {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 10vh;         /* Adjust top position */
+    }
+}
+#enter_input_add{
+    position: absolute;
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 20vh;
+    width: 32vw;
+    height: 5vh;
+    border:2px solid #D2D2D2;
+    border-radius: 4px;
+}
+@media (max-width: 600px) {
+    #enter_input_add{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 15vh;         /* Adjust top position */
+        width: 80vw;
+        height: 5vh;
+    }
+}
+#enter_state{
+    position: absolute;
+    font-size: 1vw;
+    top: 30vh;
+    left: 2vw;
+}
+@media (max-width: 600px) {
+    #enter_state {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 24vh;         /* Adjust top position */
+    }
+}
+#enter_input_state{
+    position: absolute;
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 33.8vh;
+    width: 15.5vw;
+    height: 4.5vh;
+    border:2px solid #D2D2D2;
+    border-radius: 4px;
+}
+@media (max-width: 600px) {
+    #enter_input_state{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 28vh;         /* Adjust top position */
+        width: 38vw;
+        height: 4.5vh;
+    }
+}
+#enter_city{
+    position: absolute;
+    font-size: 1vw;
+    top: 30vh;
+    left: 19.5vw;
+}
+@media (max-width: 600px) {
+    #enter_city {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 48vw;        /* Adjust left position */
+        top: 24vh;         /* Adjust top position */
+    }
+}
+#enter_input_city{
+    position: absolute;
+    left: 19.5vw;     /* Left position as a percentage of viewport width */
+    top: 33.7vh;
+    width: 15.5vw;
+    height: 4.5vh;
+    border:2px solid #D2D2D2;
+    border-radius: 4px;
+}
+@media (max-width: 600px) {
+    #enter_input_city{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 48vw;        /* Adjust left position */
+        top: 28vh;         /* Adjust top position */
+        width: 37vw;
+        height: 4.5vh;
+    }
+}
+
+#enter_postal{
+    position: absolute;
+    font-size: 1vw;
+    top: 42vh;
+    left: 2vw;
+}
+@media (max-width: 600px) {
+    #enter_postal {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 36vh;         /* Adjust top position */
+    }
+}
+#enter_input_postal{
+    position: absolute;
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 46vh;
+    width: 15.5vw;
+    height: 4.5vh;
+    border:2px solid #D2D2D2;
+    border-radius: 4px;
+}
+@media (max-width: 600px) {
+    #enter_input_postal{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 40vh;         /* Adjust top position */
+        width: 37vw;
+        height: 4.5vh;
+    }
+}
+#enter_country{
+    position: absolute;
+    font-size: 1vw;
+    top: 42vh;
+    left: 19.5vw;
+}
+@media (max-width: 600px) {
+    .enter_country {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 48vw;        /* Adjust left position */
+        top: 36vh;         /* Adjust top position */
+    }
+}
+#enter_input_Country{
+    position: absolute;
+    left: 19.5vw;     /* Left position as a percentage of viewport width */
+    top: 46vh;
+    width: 15.5vw;
+    height: 4.5vh;
+    border:2px solid #D2D2D2;
+    border-radius: 4px;
+}
+@media (max-width: 600px) {
+    #enter_input_Country{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 48vw;        /* Adjust left position */
+        top: 40vh;         /* Adjust top position */
+        width: 37vw;
+        height: 4.5vh;
+    }
+}
+#visiting{
+    position: absolute;
+    font-size: 1vw; /* Font size as a percentage of viewport width */
+    
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 15vh;
+}
+@media (max-width: 600px) {
+    #visiting {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 10vh;         /* Adjust top position */
+    }
+}
+#visiting_y{
+    position: absolute;
+    top: 20vh;
+    left: 2vw;
+    color: #D2D2D2;
+    font-size: 1vw;
+    
+}
+@media (max-width: 600px) {
+    #visiting_y {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 5vw;        /* Adjust left position */
+        top: 15vh;         /* Adjust top position */
+    }
+}
+#input_visiting_y{
+    position: absolute;
+    top: 20.5vh;
+    left: 4vw;
+}
+@media (max-width: 600px) {
+    #input_visiting_y {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 11vw;        /* Adjust left position */
+        top: 15.5vh;         /* Adjust top position */
+    }
+}
+#visiting_n{
+    position: absolute;
+    top: 20vh;
+    left: 7vw;
+    color: #D2D2D2;
+    font-size: 1vw;
+}
+@media (max-width: 600px) {
+    #visiting_n {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 20.3vw;        /* Adjust left position */
+        top: 15vh;         /* Adjust top position */
+    }
+}
+#input_visiting_n{
+    position: absolute;
+    top: 20.5vh;
+    left: 8.7vw;
+}
+@media (max-width: 600px) {
+    #input_visiting_n {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 25vw;        /* Adjust left position */
+        top: 15.5vh;         /* Adjust top position */
+    }
+}
+#user-friendly{
+    position: absolute;
+    font-size: 1vw; /* Font size as a percentage of viewport width */
+    
+    left: 2vw;     /* Left position as a percentage of viewport width */
+    top: 25vh;
+}
+@media (max-width: 600px) {
+    #user-friendly {
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 20vh;         /* Adjust top position */
+    }
+}
+#input_user_friendly_y{
+    position: absolute;
+    top: 30.5vh;
+    left: 4vw;
+}
+@media (max-width: 600px) {
+    #input_user_friendly_y{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 11vw;        /* Adjust left position */
+        top: 25.5vh;         /* Adjust top position */
+    }
+}
+#user_friendly_y{
+    position: absolute;
+    top: 30vh;
+    left: 2vw;
+    color: #D2D2D2;
+    font-size: 1vw;
+}
+@media (max-width: 600px) {
+    #user_friendly_y{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 25vh;         /* Adjust top position */
+    }
+}
+#input_user_friendly_n{
+    position: absolute;
+    top: 30.2vh;
+    left: 8.7vw;
+}
+@media (max-width: 600px) {
+    #input_user_friendly_n{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 25.5vw;        /* Adjust left position */
+        top: 25.5vh;         /* Adjust top position */
+    }
+}
+#user_friendly_n{
+    position: absolute;
+    top: 30vh;
+    left: 7vw;
+    color: #D2D2D2;
+    font-size: 1vw;
+}
+@media (max-width: 600px) {
+    #user_friendly_n{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 21vw;        /* Adjust left position */
+        top: 25vh;         /* Adjust top position */
+    }
+}
+#suggestion{
+    position: absolute;
+    font-size: 1vw;
+    top: 35vh;
+    left: 2vw;
+    
+}
+@media (max-width: 600px) {
+    #suggestion{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 30vh;         /* Adjust top position */
+    }
+}
+#input_suggestion{
+    position: absolute;
+    top: 40vh;
+    left: 2vw;
+    width: 32vw;
+    height: 5vh;
+    border:2px solid #D2D2D2;
+    border-radius: 4px;
+}
+@media (max-width: 600px) {
+    #input_suggestion{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 34vh;         /* Adjust top position */
+        width: 80vw;
+        height: 5vh;
+    }
+}
+#support{
+    position: absolute;
+    top: 48vh;
+    left: 2vw;
+    font-size: 1vw;
+}
+@media (max-width: 600px) {
+    #support{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 42vh;         /* Adjust top position */
+    }
+}
+#input_support{
+    position: absolute;
+    top: 47.5vh;
+    left: 23.5vw;
+    width: 10vw;
+    height: 4vh;
+    border:2px solid #D2D2D2;
+    border-radius: 5px;
+}
+@media (max-width: 600px) {
+    #input_support{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 76vw;        /* Adjust left position */
+        top: 41.5vh;         /* Adjust top position */
+        width: 10vw;
+        height: 3vh;
+    }
+}
+#llal{
+    display: none;
+}
+#lall{
+    display: none;
+}
+#experience{
+    position: absolute;
+    top: 20vh;
+    left: 2vw;
+}
+@media (max-width: 600px) {
+    #experience{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 10vh;         /* Adjust top position */
+    }
+}
+.box-container {
+    position: absolute;
+    top: 25vh;  /* 10% of the viewport height */
+    left: 2vw;  /* 5% of the viewport width */
+    width: 34vw;  /* 50% of the viewport width */
+   
+}
+@media (max-width: 600px) {
+    .box-container{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 15vh;         /* Adjust top position */
+        width: 80vw;
+        height: 3vh;
+    }
+}
+textarea {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #D2D2D2;
+    border-radius: 4px;
+    resize: none; /* Prevents resizing */
+}
+@media (max-width: 600px) {
+    .textarea{
+        font-size: 3vw;   /* Adjust font size for smaller screens */
+        left: 4vw;        /* Adjust left position */
+        top: 15vh;         /* Adjust top position */
+        width: 80vw;
+        
+    }
+}
+
+
+#Picture{
+    position: absolute;
+    top:  95px;
+    left: 140px;
+    font-size: small;
+}
+#file_name{
+    position: absolute;
+    top:  200px;
+    left: 30px;
+    color: black;
+    display: none; width: 85px; height: 82px; position: absolute; top: 120px; /* Adjust this value to move it up */  left:280px;
+}
+#icon{
+    position: absolute;
+    top:  120px;
+    left: 170px;
+    border: 1px solid #D2D2D2; /* Border around the element */
+    padding: 10px; 
+
+
+}
+
+
+
+.input_experience::placeholder {
+    position: absolute;
+    bottom: 5px; /* Moves placeholder text to the bottom */
+    left: 10px; /* Keeps the placeholder text slightly inside from the left */
+    font-size: 14px;
+    color: #A3A3A3; /* Light gray for the placeholder */
+    text-align: left; /* Align text to the left */
+    resize: none; /* Prevents resizing */
+    vertical-align: top; /* Ensures text aligns to the top of the box */
+} 
+
+
+
+.rate{
+    position: absolute;
+    top: 80px;
+    left:230px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15.7471px;
+}
+
+.star-rating {
+    position: absolute;
+    top: 90px;
+    left: 190px;
+
+    display: flex;
+    flex-direction: row-reverse; /* Ensures proper star selection behavior */
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    gap: 5px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+/* Default star style */
+.star-rating label {
+    font-size: 30px;
+    color: #D2D2D2; /* Default gray color */
+   /* text-shadow: 2px 2px 0 #000000;*/
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+    
+}
+
+/* Make selected and previous stars gold */
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}
+
+/* Click animation */
+.star-rating label:active {
+    transform: scale(0.8);
+}
+
+.clear{
+    position: absolute;
+    top: 59vh;
+    left: 4vw;
+    background-color: white;
+    border: white;
+    color: #8E8E8E;
+    font-size: 16px; 
+    cursor: pointer;  
+}
+
+
+.Thank{
+    position: absolute;
+    left: 60px;
+    top: 150px;
+
+    font-size: 22px;
+}
+.we{
+    display: block;
+    position: absolute;
+    font-size: small;
+    top: 180px;
+    align-items: center;
+    text-align: center;
+}
+
+#date{
+    position: absolute;
+    left: 320px;
+    top: 130px;
+    color: #D2D2D2;
+    border-radius: 3px;
+    border: 1px solid #D2D2D2;
+}
+
+#delete_icon{
+    position: absolute;
+    top: 110px;
+    left: 354px;
+    background: rgb(237, 236, 236);
+    color: rgb(0, 0, 0);
+    width: 30px;  /* Equal width and height */
+    height: 30px;
+    border-radius: 50%;  /* Makes it round */
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;  /* Adjust icon size */
+    font-weight: bold;
+}
+#error-message-1 {
+    display: none; /* Initially hidden */
+    
+    color: #e20017;
+    padding: 12px;
+    
+    border-radius: 5px;
+    text-align: center;
+    line-height: 5px; /* Vertically center the text */
+    height: 5px;
+    font-size: small;
+}
+#error-message-2 {
+    display: none; /* Initially hidden */
+    
+    color: #e20017;
+    padding: 12px;
+    
+    border-radius: 5px;
+    text-align: center;
+    line-height: 5px; /* Vertically center the text */
+    height: 5px;
+    font-size: small;
+}
+#error-message-3 {
+    display: none; /* Initially hidden */
+    
+    color: #e20017;
+    padding: 12px;
+    
+    border-radius: 5px;
+    text-align: center;
+    line-height: 5px; /* Vertically center the text */
+    height: 5px;
+    font-size: small;
+}
+#error-message-1.show {
+    display: block; /* Show the message when required */
+}
+#error-message-2.show {
+    display: block; /* Show the message when required */
+}
+#error-message-3.show {
+    display: block; /* Show the message when required */
+}
+.error_1{
+    position: absolute;
+    top: 12vw;
+    left: 30vh;
+}
+.error_2{
+    position: absolute;
+    top: 18vw;
+    left: 30vh; 
+}
+.error_3{
+    position: absolute;
+    top: 24vw;
+    left: 30vh;
+}

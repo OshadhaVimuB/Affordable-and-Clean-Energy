@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../src/styles/feedback.css">
+    <link rel="stylesheet" href="../src/styles/globle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="navlogo" src="../assets/Globle/Logo.jpg" alt="Logo" />
+            <div class="hamburger">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Volunteer</a></li>
+              <li><a class="active" href="#">Feedback</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Site map</a></li>
+            </ul>
+            <div class="profile">
+              <a href="/pages/userprofile.html">
+                <img
+                  id="User-profile"
+                  src="../assets/Globle/User profile.svg"
+                  alt="User Profile"
+                />
+              </a>
+            </div>
+          </nav>
+    </header>
+    <div class="background_images">
+        <img src="../assets/feedback/background.jpg" alt="background">
+    </div>
+    <div class="box" id="box_1">
+        <fieldset>
+            <legend >Personal Information</legend>
+                <div class="content_1"> <b>Leave us a Feedback</b></div>
+                <form id="feedbackForm">
+                    <label id="enter_name" for="enter_name_input">Enter your name</label>
+                    <input id="enter_name_input"  type="text" placeholder="Enter your name" maxlength="20"  required>
+                    <div id="error-message-1" class="error_1">This field is required.</div>
+                    <label id="enter_email" for="enter_email_input">Enter your email</label>
+                    <input id="enter_email_input" type="email" placeholder="Enter your email" required>
+                    <div id="error-message-2" class="error_2">Please enter a valid email address.</div>
+                    <label id="Telephone" for="enter_telephone_input">Telephone</label>
+                    <input id="enter_telephone_input" type="tel" placeholder="Telephone" pattern="[0-9]+" maxlength="10" required>
+                    <div id="error-message-3" class="error_3">Please enter a valid phone number.</div>
+                    <input class="Next" type="button" value="Next" >
+                    
+                </form>
+        </fieldset>
+    </div>
+   
+    <div class="box" id="box_2">
+        <div class="content_1"> <b>Leave us a Feedback</b></div>
+        <fieldset>
+            <legend>Residential Information</legend>
+            <form >
+                <label class="enter_add" for="enter_input_add">Street Address</label>
+                <input id="enter_input_add" type="text" placeholder="Street Address" maxlength="100" >
+                <label id="enter_state" for="enter_input_state">State/Province</label>
+                <input id="enter_input_state" type="text" placeholder="State/Province">
+                <label id="enter_city" for="enter_input_city">City</label>
+                <input id="enter_input_city" type="text" placeholder="City">
+                <label id="enter_postal" for="enter_input_postal">Postal Code</label>
+                <input id="enter_input_postal" type="text" placeholder="Postal Code">
+                <label id="enter_country" for="enter_input_Country">Country</label>
+                <input list="countries" id="enter_input_Country" name="country" placeholder="Country">
+                <datalist id="countries"> <option value="Sri lanka"></option><option value="United States"><option value="China"><option value="India"><option value="France"><option value="Germany"><option value="United Kingdom"><option value="Japan"><option value="Italy"><option value="Brazil"><option value="Russia"><option value="Australia"><option value="Canada"><option value="Mexico"><option value="Spain"><option value="South Africa"><option value="Egypt"><option value="Saudi Arabia"><option value="Argentina"><option value="South Korea"><option value="Turkey"></datalist>
+
+
+
+
+                <input class="Next" type="button" value="Next" >
+                <input class="Back" type="button" value="Back">
+            </form>
+            
+        </fieldset>
+    </div>
+    <div class="box" id="box_3">
+        <div class="content_1"> <b>Leave us a Feedback</b></div>
+        <fieldset>
+            <legend>Website Experience</legend>
+                <form >
+                    <label id="visiting" for="lall">1. Was this your first time visiting?</label>
+                    <input type="text" id="lall">
+                    
+                    <label id="visiting_y" for="input_visiting_y">Yes</label>
+                    <input id="input_visiting_y" type="radio" name="visiting">
+                    <label id="visiting_n" for="input_visiting_n">No</label>
+                    <input id="input_visiting_n" type="radio" name="visiting">
+                    
+
+                    <label id="user-friendly" for="llal">2. Was this website informative & user-friendly?</label>
+                    <input type="text" id="llal">
+                    <label id="user_friendly_y" for="input_user_friendly_y">Yes</label>
+                    <input id="input_user_friendly_y" type="radio" name="user_friendly">
+
+                    <label id="user_friendly_n" for="input_user_friendly_n">No</label>
+                    <input id="input_user_friendly_n" type="radio" name="user_friendly">
+                    
+                    <label id="suggestion" for="input_suggestion">Suggest any improvements (if "No" is selected)</label>
+                    <input id="input_suggestion" type="text" placeholder="Suggest any improvements (if No is selected)">
+
+                    <label id="support" for="input_support">Would You Support Renewable Energy Initiatives?</label>
+                    <input id="input_support" type="checkbox" name="user_friendly">
+
+                    <input class="Next" type="button" value="Next" >
+                    <input class="Back" type="button" value="Back">
+                </form>
+        </fieldset>
+    </div>
+    <div class="box" id="box_4">
+        <div class="content_1"> <b>Leave us a Feedback</b></div>
+        <form >
+
+            <label id="experience" for="textarea">Describe your experience</label>
+            <input type="datetime-local" id="date" name="date" >   
+            <div class="box-container">
+                
+                <textarea name="experience" id="textarea" rows="4" cols="25" maxlength="500" placeholder="Write your experience here.."></textarea>
+                <label id="Picture">Picture/Video (optional)</label>
+                <i style="font-size:60px; cursor:pointer; color: #352f2f29;" id="icon" class="fa fa-download"></i>
+
+                <input type="file" id="file" accept="image/*" hidden>
+                <img alt="file_name" id="file_name" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" >
+                <span id="delete_icon" >&#128465;</span>
+                            
+            </div>
+
+            <label class="rate">Rating</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+            </div>
+            <button class="clear" type="reset">Clear Form</button>
+            
+
+            <input class="Next" type="submit" value="Submit" >
+            <input class="Back" type="button" value="Back">
+        </form>
+    </div>
+    <div class="box" id="box_5">
+        <div class="Thank"><b> Thank you for your valuable feedback!</b></div>
+        <p class="we">We appreciate you taking the time to share your feedback with us.Your input helps us improve and serve you better. If you have more thoughts to share,feel free to reach out anytime!</p>
+        
+        <form >
+            
+            <input  class="Home" type="button" value="Home" >
+
+            
+            
+        </form>
+    </div>
+    <script src="../src/js/feedback.js"></script>
+    
+</body>
+</html>
