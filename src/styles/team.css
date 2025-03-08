@@ -1,32 +1,32 @@
 body {
-    background-color: #67BDDC; /* Light gray background */
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 200vh;
+  
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Allows vertical scrolling only when needed */
 }
-
 .background_images{
     background-color: #d0f2fe;
-}    
+}
+   
 .background_images img {
     width: 100%;
-    margin-top: -260px;
-      left: 800px;
+    top: 1100px;
+    left: 800px;
 }
 
 #trans_box {
     color: white;
     display: block;
     position: absolute;
-    top: 30vh;
-    width: 95vw;
-    height: 120vh;
-    background-color: rgba(228, 228, 228, 0.7);
+    top: 25vh;
+    width: 85%;
+    height: 85vh;
+    background-color: rgba(228, 228, 228, 0.315);
     border-radius: 29px;
     overflow: hidden; /* Hides overflow content */
 }
@@ -74,7 +74,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: 200px;
+    top: 150px;
 }
 
 .team_members div {
@@ -82,8 +82,8 @@ body {
 }
 
 #sethumdee, #oshadha, #sithumi, #visula {
-    width: 300px; /* Fixed width */
-    height: 350px; /* Fixed height */
+    width: 250px; /* Fixed width */
+    height: 300px; /* Fixed height */
 }
 .custom-list {
     display: flex;
@@ -133,7 +133,7 @@ body {
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 25px;
     z-index: 1; /* Ensure the overlay is above the image but below the link */
     pointer-events: none; /* Allows clicks to pass through */
     backdrop-filter: blur(500px); /* Adds the blur effect */
@@ -144,6 +144,7 @@ body {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: small;
     color: white;
     text-align: center;
     width: 80%; /* Adjust this value as needed */
