@@ -1,0 +1,167 @@
+body {
+    background-color: #67BDDC; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 200vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Allows vertical scrolling only when needed */
+}
+
+.background_images{
+    background-color: #d0f2fe;
+}    
+.background_images img {
+    width: 100%;
+    margin-top: -260px;
+      left: 800px;
+}
+
+#trans_box {
+    color: white;
+    display: block;
+    position: absolute;
+    top: 30vh;
+    width: 95vw;
+    height: 120vh;
+    background-color: rgba(228, 228, 228, 0.7);
+    border-radius: 29px;
+    overflow: hidden; /* Hides overflow content */
+}
+
+/* Text styles */
+.gray_text {
+    color: #3c3131c6;
+}
+
+.black_text {
+    color: black;
+}
+
+.gray_text, .black_text {
+    display: inline-block;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#with {
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
+
+#res {
+    position: absolute;
+    top: 50px;
+    left: 640px;
+}
+
+#comes {
+    position: absolute;
+    top: 85px;
+    left: 530px;
+}
+
+#team {
+    position: absolute;
+    top: 85px;
+    left: 700px;
+}
+
+.team_members {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 200px;
+}
+
+.team_members div {
+    text-align: center;
+}
+
+#sethumdee, #oshadha, #sithumi, #visula {
+    width: 300px; /* Fixed width */
+    height: 350px; /* Fixed height */
+}
+.custom-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type:disc;
+    padding: 10;
+    margin-top: 5px;
+    justify-content: flex-start;
+}
+
+
+
+.visula {
+  
+    position: relative;
+    display: inline-block; /* Prevents unnecessary extra space */
+    width: fit-content; /* Ensures the container wraps tightly around the image */
+    height: fit-content;
+    
+}
+.sithumi{
+    position: relative;
+    display: inline-block; /* Prevents unnecessary extra space */
+    width: fit-content; /* Ensures the container wraps tightly around the image */
+    height: fit-content;
+}
+.oshadha{
+    position: relative;
+    display: inline-block; /* Prevents unnecessary extra space */
+    width: fit-content; /* Ensures the container wraps tightly around the image */
+    height: fit-content;
+}
+.sethumdee{
+    position: relative;
+    display: inline-block; /* Prevents unnecessary extra space */
+    width: fit-content; /* Ensures the container wraps tightly around the image */
+    height: fit-content;
+}
+.overlay{
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    width: 100%;  /* Covers only the image */
+    height:50%; /* Matches the image */
+    bottom:6px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    cursor: pointer;
+    border-radius: 30px;
+    z-index: 1; /* Ensure the overlay is above the image but below the link */
+    pointer-events: none; /* Allows clicks to pass through */
+    backdrop-filter: blur(500px); /* Adds the blur effect */
+    background-color: rgba(187, 170, 170, 0.4); /* Semi-transparent background */
+}
+.content{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 80%; /* Adjust this value as needed */
+    height: 80%; /* Adjust this value as needed */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    padding: 20px; /* Optional: Add padding for better spacing */
+    z-index: 2; /* Ensure the content is above the overlay */
+
+}
+.visula:hover .overlay{
+    opacity: 0.8;
+}
+.sithumi:hover .overlay{
+    opacity: 0.8;
+}
+.oshadha:hover .overlay{
+    opacity: 0.8;
+}
+.sethumdee:hover .overlay{
+    opacity: 0.8;
+}
