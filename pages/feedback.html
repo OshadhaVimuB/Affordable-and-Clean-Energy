@@ -33,7 +33,7 @@
           <a href="/pages/userprofile.html">
             <img
               id="User-profile"
-              src="../assets/Globle/User profile.svg"
+              src="../assets/Globle/User-profile.svg"
               alt="User Profile"
             />
           </a>
@@ -76,7 +76,7 @@
             id="enter_telephone_input"
             type="tel"
             placeholder="Telephone"
-            pattern="[0-9]+"
+            pattern="\d{10}"
             maxlength="10"
             required
           />
@@ -252,9 +252,82 @@
       </p>
 
       <form>
-        <input class="Home" type="button" value="Home" />
+        <input onclick="visitLink()" class="Home" type="button" value="Home" />
       </form>
     </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <!-- About Us Section -->
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+              We are committed to ensuring access to affordable, reliable, and
+              clean energy for all, driving innovation, empowering communities,
+              and building a sustainable future.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="./volunteer.html">Volunteer</a></li>
+              <li><a href="./feedback.html">Feedback</a></li>
+              <li><a href="./team.html">About us</a></li>
+              <li><a href="#">SiteMap</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Support</h3>
+            <ul class="footer-links">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column logo-column">
+            <div class="footer-logos">
+              <div class="energy-logo">
+                <img
+                  src="../assets/home/ace-logo.svg"
+                  alt="Affordable and Clean Energy"
+                />
+              </div>
+              <div class="un-logo">
+                <img src="../assets/home/un-logo.svg" alt="United Nations" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            Copyright © 2025 Team alFa. All rights reserved.
+          </p>
+          <div class="social-media">
+            <p>Follow us on</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="../src/js/feedback.js"></script>
   </body>
 </html>
