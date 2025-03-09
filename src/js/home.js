@@ -7,3 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.classList.toggle("active");
   });
 });
+
+function visitLink() {
+  window.location.href = "/pages/table.html";
+}
