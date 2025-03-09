@@ -29,7 +29,11 @@ body {
   border-radius: 29px;
   overflow: hidden; /* Hides overflow content */
 }
+#User-profile{
+  position: relative;
+  right: 100px;
 
+}
 /* Text styles */
 .gray_text {
   color: #3c3131c6;
@@ -163,4 +167,12 @@ body {
 }
 .sethumdee:hover .overlay {
   opacity: 0.8;
+}
+footer{
+  width: 100%;
+}
+#trans_box{
+  margin-left: 100px;
+  margin-top: 100px;
+  
 }

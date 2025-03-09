@@ -12,13 +12,21 @@ body {
 .box{
     display: none;
 }
+#User-profile{
+    position: relative;
+    right: 100px;
+
+}
 .box.active {
     display: block;
 }
-#box_1{height:71vh;
+#box_1{
+    height:71vh;
     width:38vw;
     justify-content:center;align-items:center;
-    background-color:#fff;position:absolute;border-radius:8%;max-width:600px;max-height:500px;min-width:300px;min-height:250px;display:none}
+    background-color:#fff;position:absolute;border-radius:8%;
+    margin-top: -500px;
+    max-width:600px;max-height:500px;min-width:300px;min-height:250px;display:none}
 
 @media (max-width: 600px) {
     #box_1 {
@@ -250,6 +258,7 @@ legend{
     display: flex;
     height: 71vh;   /* 50% of viewport height */
     width: 38vw;    /* 60% of viewport width */
+    margin-top: -500px;
     justify-content: center;
     align-items: center;
     
@@ -281,6 +290,7 @@ legend{
     height: 71vh;   /* 50% of viewport height */
     width: 38vw;    /* 60% of viewport width */
     justify-content: center;
+    margin-top: -500px;
     align-items: center;
     
     background-color: white;
@@ -311,6 +321,7 @@ legend{
     height: 71vh;   /* 50% of viewport height */
     width: 38vw;    /* 60% of viewport width */
     justify-content: center;
+    margin-top: -500px;
     align-items: center;
     
     background-color: white;
@@ -356,7 +367,7 @@ legend{
     width: 38vw;    /* 60% of viewport width */
     justify-content: center;
     align-items: center;
-    
+    margin-top: -500px;
     background-color: white;
     position: absolute;
     
@@ -983,3 +994,149 @@ textarea {
     top: 24vw;
     left: 30vh;
 }
+ /* Footer Fixes */
+ .footer {
+    background-color: #074f6b;
+    color: white;
+    padding: 40px 20px;
+    width: 100%;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .footer-column h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+  }
+  
+  .footer-column p,
+  .footer-links a {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  
+  .logo-column {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-logos {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .energy-logo img,
+  .un-logo img {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .copyright {
+    font-size: 12px;
+  }
+  
+  .social-media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-media p {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .footer-bottom {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+  
+    .social-media {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .logo-column {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-logos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .energy-logo img,
+    .un-logo img {
+      max-width: 100px;
+    }
+  }
