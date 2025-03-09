@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table page</title>
+    <link rel="stylesheet" href="../src/styles/table.css" />
+    <link rel="stylesheet" href="../src/styles/globle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img id="navlogo" src="../assets/Globle/Logo.jpg" alt="Logo" />
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./volunteer.html">Volunteer</a></li>
+          <li><a href="./feedback.html">Feedback</a></li>
+          <li><a href="./team.html">About us</a></li>
+          <li><a href="#">Site map</a></li>
+        </ul>
+        <div class="profile">
+          <a href="/pages/userprofile.html">
+            <img
+              id="User-profile"
+              src="../assets/Globle/User-profile.svg"
+              alt="User Profile"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <section class="table">
+      <div class="energy-data-container">
+        <h1>Global Progress on Clean Energy</h1>
+        <p>
+          The table below presents key data on renewable energy adoption, energy
+          access, and carbon reduction efforts across different regions. This
+          information helps track global progress toward SDG 7 goals of ensuring
+          access to affordable, reliable, sustainable, and modern energy for
+          all.
+        </p>
+
+        <table class="energy-table">
+          <thead>
+            <tr>
+              <th colspan="5" class="table-header">
+                        <img class="logo-tab" src="../assets/home/ace-logo.svg" alt="ace-logo">
+                Global Clean Energy Progress Tracker
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <i class="fas fa-globe icon" aria-hidden="true"></i>
+                Region/Country
+                <span class="tooltip"
+                  >Countries and regions tracked for energy progress</span
+                >
+              </th>
+              <th>
+                <i class="fas fa-leaf icon" aria-hidden="true"></i>
+                Renewable Energy (%)
+                <span class="tooltip"
+                  >Percentage of energy from renewable sources</span
+                >
+              </th>
+              <th>
+                <i class="fas fa-bolt icon" aria-hidden="true"></i>
+                Energy Access (%)
+                <span class="tooltip"
+                  >Percentage of population with reliable energy access</span
+                >
+              </th>
+              <th>
+                <i class="fas fa-smog icon" aria-hidden="true"></i>
+                CO2 Reduction Target
+                <span class="tooltip"
+                  >Carbon reduction goals by target year</span
+                >
+              </th>
+              <th>
+                <i class="fas fa-project-diagram icon" aria-hidden="true"></i>
+                Notable Projects
+                <span class="tooltip"
+                  >Significant clean energy initiatives</span
+                >
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Norway</td>
+              <td>98.4%</td>
+              <td>
+                100%
+                <i
+                  class="fas fa-check check-icon"
+                  aria-label="Full access achieved"
+                ></i>
+              </td>
+              <td>Net-zero by 2030</td>
+              <td>
+                <a href="#" aria-label="Learn more about Offshore Wind Farms"
+                  >Offshore Wind Farms</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>India</td>
+              <td>38.5%</td>
+              <td>
+                95%
+                <i
+                  class="fas fa-check check-icon"
+                  aria-label="Nearly full access achieved"
+                ></i>
+              </td>
+              <td>500 GW by 2030</td>
+              <td>
+                <a
+                  href="#"
+                  aria-label="Learn more about International Solar Alliance"
+                  >International Solar Alliance</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Kenya</td>
+              <td>73.1%</td>
+              <td>75%</td>
+              <td>32% by 2030</td>
+              <td>
+                <a
+                  href="#"
+                  aria-label="Learn more about Lake Turkana Wind Project"
+                  >Lake Turkana Wind Project</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Germany</td>
+              <td>46.3%</td>
+              <td>
+                100%
+                <i
+                  class="fas fa-check check-icon"
+                  aria-label="Full access achieved"
+                ></i>
+              </td>
+              <td>65% by 2030</td>
+              <td>
+                <a href="#" aria-label="Learn more about Energiewende"
+                  >Energiewende</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Costa Rica</td>
+              <td>99.7%</td>
+              <td>
+                99.5%
+                <i
+                  class="fas fa-check check-icon"
+                  aria-label="Nearly full access achieved"
+                ></i>
+              </td>
+              <td>Carbon neutral by 2050</td>
+              <td>
+                <a
+                  href="#"
+                  aria-label="Learn more about National Decarbonization Plan"
+                  >National Decarbonization Plan</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>China</td>
+              <td>29.4%</td>
+              <td>
+                100%
+                <i
+                  class="fas fa-check check-icon"
+                  aria-label="Full access achieved"
+                ></i>
+              </td>
+              <td>Peak emissions by 2030</td>
+              <td>
+                <a href="#" aria-label="Learn more about Three Gorges Dam"
+                  >Three Gorges Dam</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Morocco</td>
+              <td>37.2%</td>
+              <td>
+                99.6%
+                <i
+                  class="fas fa-check check-icon"
+                  aria-label="Nearly full access achieved"
+                ></i>
+              </td>
+              <td>52% by 2030</td>
+              <td>
+                <a href="#" aria-label="Learn more about Noor Solar Complex"
+                  >Noor Solar Complex</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Denmark</td>
+              <td>67.5%</td>
+              <td>
+                100%
+                <i
+                  class="fas fa-check check-icon"
+                  aria-label="Full access achieved"
+                ></i>
+              </td>
+              <td>70% by 2030</td>
+              <td>
+                <a href="#" aria-label="Learn more about Energy Islands Project"
+                  >Energy Islands Project</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="source-info">
+          Data sourced from International Energy Agency and national reports
+          (2023-2024)
+        </p>
+      </div>
+    </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <!-- About Us Section -->
+            <div class="footer-column">
+              <h3>About Us</h3>
+              <p>
+                We are committed to ensuring access to affordable, reliable, and
+                clean energy for all, driving innovation, empowering
+                communities, and building a sustainable future.
+              </p>
+            </div>
+
+            <div class="footer-column">
+              <h3>Explore</h3>
+              <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./volunteer.html">Volunteer</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="./team.html">About us</a></li>
+                <li><a href="#">SiteMap</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Support</h3>
+              <ul class="footer-links">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column logo-column">
+              <div class="footer-logos">
+                <div class="energy-logo">
+                  <img
+                    src="../assets/home/ace-logo.svg"
+                    alt="Affordable and Clean Energy"
+                  />
+                </div>
+                <div class="un-logo">
+                  <img src="../assets/home/un-logo.svg" alt="United Nations" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p class="copyright">
+              Copyright © 2025 Team alFa. All rights reserved.
+            </p>
+            <div class="social-media">
+              <p>Follow us on</p>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" aria-label="TikTok"
+                  ><i class="fab fa-tiktok"></i
+                ></a>
+                <a href="#" aria-label="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
