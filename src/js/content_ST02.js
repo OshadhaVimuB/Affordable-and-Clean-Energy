@@ -8,10 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function visitLink() {
-  window.location.href = "/pages/table.html";
-}
-
 var goToTopButton = document.getElementById("goToTopBtn");
 
 window.onscroll = function () {
