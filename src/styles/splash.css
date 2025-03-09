@@ -5,7 +5,7 @@ body {
 .splash {
     height: 100vh;
     width:100%;
-    background-image: url("/assets/splash/background-1.png");
+    background-image: url("/assets/splash/background-1.webp");
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
