@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Content page</title>
+    <link rel="stylesheet" href="../../src/styles/st/content_ST01.css" />
+    <link rel="stylesheet" href="../../src/styles/globle.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img id="navlogo" src="../../assets/Globle/Logo.jpg" alt="Logo" />
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../volunteer.html">Volunteer</a></li>
+          <li><a href="../feedback.html">Feedback</a></li>
+          <li><a href="../team.html">About us</a></li>
+          <li><a href="../sitemap.html">Site map</a></li>
+        </ul>
+        <div class="profile">
+          <a href="../userprofile.html">
+            <img
+              id="User-profile"
+              src="../../assets/Globle/User-profile.svg"
+              alt="User Profile"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <section class="News">
+      <div class="news-header">
+        <h2>News</h2>
+        <div class="dropdown-container">
+          <button class="years" onclick="toggleDropdown()">Years ▼</button>
+          <div class="dropdown-content" id="dropdownMenu">
+            <a href="#" onclick="filterPrograms('2023')">2023</a>
+            <a href="#" onclick="filterPrograms('2024')">2024</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="program-container">
+        <div class="program-card">
+          <div class="card newest">Energy Revolution</div>
+          <img src="../../assets/news/img1.jpg" alt="Energy Revolution" />
+          <h3>
+            To save the planet, we need a just and fair renewable energy
+            revelution
+          </h3>
+          <a
+            href="https://www.un.org/en/desa/cop28-save-planet-we-need-just-and-fair-renewable-energy-revolution"
+          >
+            <button class="view-project-btn">Read</button>
+          </a>
+        </div>
+        <div class="program-card">
+          <div class="card newest">Water for climate</div>
+          <img src="../../assets/news/img2.jpg" alt="Water for climate" />
+          <h3>Together Better; Together Stronger</h3>
+          <a
+            href="https://sdgs.un.org/news/water-key-attain-sustainable-development-prosperity-and-peace-57084"
+          >
+            <button class="view-project-btn">Read</button>
+          </a>
+        </div>
+        <div class="program-card">
+          <div class="card most-popular">Tackle sustainability.</div>
+          <img src="../../assets/news/img3.png" alt="Solar Sister" />
+          <h3>Synergy solutions for world in crisis</h3>
+          <a
+            href="https://sdgs.un.org/news/governments-must-seek-win-win-synergies-tackling-climate-and-sustainable-development-crises"
+          >
+            <button class="view-project-btn">Read</button>
+          </a>
+        </div>
+        <div class="program-card">
+          <div class="card most-popular">Clean Energy Day</div>
+          <img src="../../assets/news/img4.jpeg" alt="Clean Energy Day" />
+          <h3>UN Celebrates the First World Clean Energy Day</h3>
+          <a
+            href="https://sdgs.un.org/news/un-celebrates-first-world-clean-energy-day-54575"
+          >
+            <button class="view-project-btn">Read</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <!-- About Us Section -->
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+              We are committed to ensuring access to affordable, reliable, and
+              clean energy for all, driving innovation, empowering communities,
+              and building a sustainable future.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="../volunteer.html">Volunteer</a></li>
+              <li><a href="../feedback.html">Feedback</a></li>
+              <li><a href="../team.html">About us</a></li>
+              <li><a href="../sitemap.html">SiteMap</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Support</h3>
+            <ul class="footer-links">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column logo-column">
+            <div class="footer-logos">
+              <div class="energy-logo">
+                <img
+                  src="../../assets/home/ace-logo.svg"
+                  alt="Affordable and Clean Energy"
+                />
+              </div>
+              <div class="un-logo">
+                <img src="../../assets/home/un-logo.svg" alt="United Nations" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            Copyright © 2025 Team alFa. All rights reserved.
+          </p>
+          <div class="social-media">
+            <p>Follow us on</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../../src/js/news.js"></script>
+  </body>
+</html>
