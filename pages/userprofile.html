@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../src/styles/globle.css">
     <link rel="stylesheet" href="../src/styles/userprofile.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <title>User Profile</title>
 </head>
@@ -182,17 +183,51 @@
             
             <section class="golas">
                 <div class="goalContainer">
-                    <h2>Hello world</h2>
+                    <h2>Goals</h2>
+                    <ul>
+                        <li>Support to Sustainable education.</li>
+                        <li>Drive Climate Action Initiatives.</li>
+                        <li>Support Economic Growth & Employment.</li>
+                        <li>Improve my carrier.</li>
+                    </ul>
                 </div>
             </section>
 
 
             <div class="experiencesContatiner">
-                <h2> godd mornig mfs</h2>
+                <h2>Experiences</h2>
+                <ul>
+                    <li>Educational Outreach & Digital Learning.</li>
+                    <li>Climate Awareness & Environmental Initiatives.</li>
+                    <li>Youth Employment & Economic Growth Programs.</li>
+                    <li>IT Support.</li>
+                </ul>
             </div>
 
             <div class="contactContainer">
-                <h2>Hello world</h2>
+                <h2>Contact Me</h2>
+                <form id="contact-form" class="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Enter your name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Enter your email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            <span id="email-error" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Type your message here" rows="5"></textarea>
+                        <div id="char-count" class="char-count">0/500</div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" id="clear-form" class="btn btn-clear">Clear form</button>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </div>
+                </form>
             </div>
 
         </section>
