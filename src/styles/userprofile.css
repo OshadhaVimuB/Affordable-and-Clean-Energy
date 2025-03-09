@@ -25,7 +25,7 @@ body{
 }
 
 .bg-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -45,9 +45,11 @@ body{
     "workSkills timeLineAbout"
     ;
     width: 85%;
-    height: 90vh;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     background: var(--glass-bg);
-    padding: 1.5rem;
+    padding: 2rem;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 25px rgba(255, 255, 255, 0.08);
     border-radius: 40px;
     grid-gap: 1rem;
@@ -78,6 +80,7 @@ body{
 }
 
 .main-container .userProfile {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,12 +89,581 @@ body{
     box-shadow: none;
 }
 
-.main-container .userProfile .profile figure img {
+.main-container .userProfile .userProfileIcon figure img {
     width: 18rem;
     height: 18rem;
     border-radius: 50%;
   }
 
 
+  .workSkills .wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.workSkills .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    padding-top: 50;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+.workSkills .heading{
+    margin-bottom: 30px;
+}
+.workSkills .header .calenderHeader {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: 30px;
+}
+.workSkills .header .calenderIcon {
+    display: flex;
+    gap: 10px;
+}
+.workSkills .header .calenderIcon span {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+.workSkills .header .calenderIcon span:hover {
+    background-color: #f5f5f5;
+}
+
+.workSkills .calender {
+    width: 100%;
+}
+
+.workSkills .calender .week,
+.workSkills .calender .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    text-align: center;
+}
+.workSkills .calender .week {
+    margin-bottom: 10px;
+}
+
+.workSkills .calender .week li {
+    font-weight: 500;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    padding: 8px 0;
+}
+.workSkills .calender .days {
+    gap: 10px;
+}
+
+.workSkills .calender .days li {
+    position: relative;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--main-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.workSkills .calender .days li.active::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.workSkills .calender .days li.active {
+    color: var(--white-font-color);
+}
+
+.workSkills .calender .days li.active:hover::before {
+    background-color: #0e536e;
+}
+
+.workSkills .calender .days li:hover::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    z-index: -1;
+    transition: background-color 0.3s;
+}
+
+.userDetails{
+    position: relative;
+    padding: 1.5rem;
+}
+
+.userDetails .heading{
+    font-size: 2.5rem;
+}
+
+.userDetails .map{
+    position:absolute;
+    top: 2.5rem;
+    left: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.userDetails .map span{
+    font-size: 1.2rem;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.userDetails .userTitle{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    padding-top: 0.5rem;
+}
+
+.userDetails span{
+    position: relative;
+    margin-bottom: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.userDetails .user-bio{
+    text-wrap: auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.userDetails .address{
+    padding-top: 1.5rem;
+}
+
+.timeLineAbout{
+    padding: 0.5rem 1.5rem;
+}
+
+.timeLineAbout .tabs ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    list-style: none;
+
+}
+.timeLineAbout .tabs ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+    padding-bottom: 0.8rem;
+    cursor: pointer;
+}
+
+.timeLineAbout .tabs ul li span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 0.8rem;
+}
+
+.timeLineAbout .tabs ul .active::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: #0e536e;
+}
 
 
+.timeLineAbout .tabs ul::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--secondary-color);
+}
+.timeLineAbout .skillContainer {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.timeLineAbout .skillContainer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.timeLineAbout .skillContainer ul {
+    list-style: none;
+}
+
+.timeLineAbout .skillContainer ul li {
+    position: relative;
+    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.timeLineAbout .skillContainer ul li span {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.timeLineAbout .skillContainer .skillBar {
+    height: 20px; 
+    background-color: #f5f5f5; 
+    border-radius: 10px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.timeLineAbout .skillContainer .skillProgress {
+    height: 100%;
+    background-color: #0e536e; 
+    transition: width 0.3s ease-in-out; 
+}
+
+.timeLineAbout .goalContainer {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.timeLineAbout .goalContainer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.timeLineAbout .goalContainer ul {
+    margin-top: 2rem;
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+.timeLineAbout .goalContainer ul li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--main-color);
+    line-height: 1.5;
+}
+
+.timeLineAbout .experiencesContatiner {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.timeLineAbout .experiencesContatiner h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.timeLineAbout .experiencesContatiner ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.timeLineAbout .experiencesContatiner ul li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--main-color);
+    line-height: 1.5;
+}
+.timeLineAbout .contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.timeLineAbout .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.timeLineAbout .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+.timeLineAbout .form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.timeLineAbout .form-group input,
+.timeLineAbout .form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s;
+}
+
+.timeLineAbout .form-group input:focus,
+.timeLineAbout .form-group textarea:focus {
+    border-color: #0e536e;
+    outline: none;
+}
+
+.timeLineAbout .form-group input.error,
+.timeLineAbout .form-group textarea.error {
+    border-color: #ff6347;
+}
+
+.timeLineAbout .error-message {
+    color: #ff6347;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.timeLineAbout .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.timeLineAbout .char-count {
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    margin-top: 0.3rem;
+}
+
+.timeLineAbout .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.timeLineAbout .btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.timeLineAbout .btn-submit {
+    background-color: var(--button-color);
+    color: white;
+}
+
+.timeLineAbout .btn-submit:hover {
+    background-color: #0e536e;
+}
+
+.timeLineAbout .btn-clear {
+    background-color: #f5f5f5;
+    color: var(--main-color);
+}
+
+.timeLineAbout .btn-clear:hover {
+    background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 8px;
+    }
+} 
+
+@media screen and (max-width: 330px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .bg-container {
+        height: 100vh;
+        position: fixed;
+    }
+    
+    .main-container {
+        width: 95%;
+        min-height: 100vh;
+        margin: 1rem auto;
+        padding: 1rem;
+        border-radius: 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "userProfile"
+            "userDetails"
+            "workSkills"
+            "timeLineAbout";
+        gap: 1rem;
+    }
+    
+    .userProfile {
+        grid-area: userProfile;
+    }
+    
+    .userDetails {
+        grid-area: userDetails;
+    }
+    
+    .workSkills {
+        grid-area: workSkills;
+    }
+    
+    .timeLineAbout {
+        grid-area: timeLineAbout;
+    }
+    
+    .main-container .userProfileIcon figure img {
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .userDetails {
+        padding: 1rem;
+    }
+    
+    .userDetails .heading {
+        font-size: 1.8rem;
+    }
+    
+    .userDetails .map {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0 1rem 0;
+    }
+    
+    .userDetails .map span {
+        margin-right: 0.5rem;
+    }
+    
+    .userDetails .user-bio {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+    .userDetails .userTitle {
+        margin-bottom: 1rem;
+    }
+    
+    .workSkills .header {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        padding-top: 0;
+    }
+    
+    .workSkills .heading {
+        margin-bottom: 1rem;
+    }
+    
+    .workSkills .header .calenderHeader {
+        margin-left: 0;
+    }
+    
+    .workSkills .calender .days {
+        gap: 5px;
+    }
+    
+    .workSkills .calender .days li {
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    
+    .workSkills .calender .days li.active::before,
+    .workSkills .calender .days li:hover::before {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .timeLineAbout {
+        padding: 1rem;
+    }
+    
+    .timeLineAbout .tabs ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .timeLineAbout .tabs ul li {
+        margin-right: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .timeLineAbout .tabs ul li span {
+        font-size: 1rem;
+    }
+    
+    .timeLineAbout .form-row {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .timeLineAbout .btn {
+        padding: 0.8rem 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 9px;
+    }
+    
+    .main-container {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    
+    .main-container .userProfileIcon figure img {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    .userDetails .heading {
+        font-size: 1.5rem;
+    }
+}
