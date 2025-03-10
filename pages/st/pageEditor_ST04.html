@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Visula Siriwardana</title>
+
+    <link rel="stylesheet" href="/src/styles/st/pageEditor_ST04.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="/src/styles/globle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <img id="navlogo" src="../../assets/Globle/Logo.jpg" alt="Logo" />
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="../volunteer.html">Volunteer</a></li>
+            <li><a href="../feedback.html">Feedback</a></li>
+            <li><a href="../team.html">About us</a></li>
+            <li><a href="../sitemap.html">Site map</a></li>
+          </ul>
+          <div class="profile">
+            <a href="../userprofile.html">
+              <img
+                id="User-profile"
+                src="/assets/Globle/User-profile.svg"
+                alt="User Profile"
+              />
+            </a>
+          </div>
+        </nav>
+      </header>
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+    <section class="stud">
+        <h2>Visula Siriwardana, Student 4</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section id="userProfile">
+                <h2>User Profile</h2>
+                    <h3>Technical Description</h3>
+                    <li>HTML Techniques</li>
+                        <p>The userprofile.html file uses a combination of semantic HTML5 tags to create a structured and accessible user profile page. Key tags include:</p>
+                        <ul>
+                            <li class="dec"> <b>header</b> and <b>nav</b>: These tags are used to define the navigation bar at the top of the page. The <b>nav</b> tag is particularly useful for defining a set of navigation links, enhancing both functionality and accessibility.</li>
+                            <li class="dec"><b>Section</b>: This tag is used multiple times to divide the page into logical sections such as user details, work skills, volunteering calendar, and contact information. This helps in organizing content and improving readability.</li>
+                            <li class="dec"><b>div</b>: Used for creating containers and grouping elements together. For example, the userProfile, userDetails, workSkills, and timeLineAbout sections are wrapped in <b>div</b> tags to manage their layout and styling.</li>
+                            <li class="dec"><b>img</b>: Used for displaying images, such as the user's profile picture and background image. The <b>alt</b> attribute is included for accessibility, providing a text description for screen readers.</li>
+                            <li class="dec"><b>form</b>: Used for the contact form, allowing users to send messages. The form includes input fields for name, email, and message, with appropriate labels and placeholders for user guidance.</li>
+                        </ul> 
+                    <li>CSS Techniques</li>
+                    <ul>
+                        <li class="dec"><b>Flexbox and Grid:</b> These CSS layout modules are used to create responsive and flexible layouts. For example, the main container uses flexbox to align sections vertically, while the calendar and tabs use grid layouts for better control over spacing and alignment.</li>
+                        <li class="dec"><b>Media Queries:</b> Used extensively to ensure the page is responsive and adapts to different screen sizes. This includes adjusting font sizes, widths, and positions based on the viewport size.</li>
+                        <li class="dec"><b>Custom Properties (CSS Variables):</b> Used for defining color schemes and other reusable styles, making it easier to maintain and update the design.</li>
+                    </ul>
+                    
+                    <h3>Accessibility</h3>
+                    <ul>
+                        <li class="dec"><b>Semantic HTML:</b> The use of semantic HTML tags like <b>header</b>, <b>nav</b>, <b>section</b>, and <b>form</b> helps screen readers and other assistive technologies understand the structure and purpose of the content.</li>
+                        <li class="dec"><b>Alt Text for Images:</b> All images include <b>alt</b> attributes with descriptive text, ensuring that users who rely on screen readers can understand the content of the images.</li>
+                        <li class="dec"><b>Color Contrast:</b> The color scheme ensures sufficient contrast between text and background colors, making the content readable for users with visual impairments.</li>
+                        <li class="dec"><b>Responsive Design:</b> The use of media queries ensures that the page is usable on a variety of devices and screen sizes, including mobile phones and tablets.</li>
+                    </ul>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="./validation_ST04.html">Student4 Validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="../userprofile.html">User Profile.</a> Click to go the page.</p>
+            </section>
+
+            <section id="siteMap">
+                <h2>Site Map</h2>
+                    <h3>Technical Description</h3>
+                    <li>HTML Techniques</li>
+                    <p>The <b>sitemap.html</b> file uses a combination of semantic HTML5 tags to create a structured and accessible site map page. Key tags include:</p> 
+                    <ul>
+                        <li class="dec"> <b>header</b> and <b>nav</b>: These tags are used to define the navigation bar at the top of the page. The <b>nav</b> tag is particularly useful for defining a set of navigation links, enhancing both functionality and accessibility.</li>
+                        <li class="dec"><b>div:</b> Used for creating containers and grouping elements together. For example, the <b>mainContainer</b> and <b>container</b> sections are wrapped in <b>div</b> tags to manage their layout and styling.</li>
+                        <li class="dec"><b>svg and rect:</b> Used to create the visual site map. The <b>svg</b> element is used to draw the site map structure, while <b>rect</b> elements represent individual pages and links.</li>
+                        <li class="dec"><b>text:</b> Used within the <b>svg</b> element to label the nodes of the site map, providing clear text descriptions for each section.</li>
+                        <li class="dec"><b>a:</b> Used to create hyperlinks within the site map, allowing users to navigate to different pages.</li>
+                    </ul>
+
+                    <li>CSS Techniques</li>
+                    <ul>
+                        <li class="dec"><b>Flexbox and Grid:</b> These CSS layout modules are used to create responsive and flexible layouts. For example, the main container uses flexbox to align sections vertically, while the calendar and tabs use grid layouts for better control over spacing and alignment.</li>
+                        <li class="dec"><b>Media Queries:</b> Used extensively to ensure the page is responsive and adapts to different screen sizes. This includes adjusting font sizes, widths, and positions based on the viewport size.</li>
+                        <li class="dec"><b>Custom Properties (CSS Variables):</b> Used for defining color schemes and other reusable styles, making it easier to maintain and update the design.</li>
+                    </ul>
+
+                    <h3>Accessibility</h3>
+                    <ul>
+                        <li class="dec"><b>Semantic HTML:</b> The use of semantic HTML tags like <b>header</b>, <b>nav</b>, <b>section</b>, and <b>form</b> helps screen readers and other assistive technologies understand the structure and purpose of the content.</li>
+                        <li class="dec"><b>Alt Text for Images:</b> All images include <b>alt</b> attributes with descriptive text, ensuring that users who rely on screen readers can understand the content of the images.</li>
+                        <li class="dec"><b>Color Contrast:</b> The color scheme ensures sufficient contrast between text and background colors, making the content readable for users with visual impairments.</li>
+                        <li class="dec"><b>Responsive Design:</b> The use of media queries ensures that the page is usable on a variety of devices and screen sizes, including mobile phones and tablets.</li>
+                    </ul>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="./validation_ST04.html">Student4 Validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                    <p><a href="../sitemap.html">Site Map.</a> Click to go the page.</p>
+            </section>
+
+            <section id="contentPage">
+                <h2>Content Page</h2>
+                <h3>Technical Description</h3>
+                    <li>HTML Techniques</li>
+                    <p>The <b>sitemap.html</b> file uses a combination of semantic HTML5 tags to create a structured and accessible site map page. Key tags include:</p> 
+                    <ul>
+                        <li class="dec"> <b>header</b> and <b>nav</b>: These tags are used to define the navigation bar at the top of the page. The <b>nav</b> tag is particularly useful for defining a set of navigation links, enhancing both functionality and accessibility.</li>
+                        <li class="dec"><b>div:</b> Used for creating containers and grouping elements together. For example, the <b>mainContainer</b> and <b>container</b> sections are wrapped in <b>div</b> tags to manage their layout and styling.</li>
+                        <li class="dec"><b>svg and rect:</b> Used to create the visual site map. The <b>svg</b> element is used to draw the site map structure, while <b>rect</b> elements represent individual pages and links.</li>
+                        <li class="dec"><b>text:</b> Used within the <b>svg</b> element to label the nodes of the site map, providing clear text descriptions for each section.</li>
+                        <li class="dec"><b>a:</b> Used to create hyperlinks within the site map, allowing users to navigate to different pages.</li>
+                    </ul>
+
+                    <li>CSS Techniques</li>
+                    <ul>
+                        <li class="dec"><b>Flexbox and Grid:</b> These CSS layout modules are used to create responsive and flexible layouts. For example, the main container uses flexbox to align sections vertically, while the calendar and tabs use grid layouts for better control over spacing and alignment.</li>
+                        <li class="dec"><b>Media Queries:</b> Used extensively to ensure the page is responsive and adapts to different screen sizes. This includes adjusting font sizes, widths, and positions based on the viewport size.</li>
+                        <li class="dec"><b>Custom Properties (CSS Variables):</b> Used for defining color schemes and other reusable styles, making it easier to maintain and update the design.</li>
+                    </ul>
+
+                    <h3>Accessibility</h3>
+                    <ul>
+                        <li class="dec"><b>Semantic HTML:</b> The use of semantic HTML tags like <b>header</b>, <b>nav</b>, <b>section</b>, and <b>form</b> helps screen readers and other assistive technologies understand the structure and purpose of the content.</li>
+                        <li class="dec"><b>Alt Text for Images:</b> All images include <b>alt</b> attributes with descriptive text, ensuring that users who rely on screen readers can understand the content of the images.</li>
+                        <li class="dec"><b>Color Contrast:</b> The color scheme ensures sufficient contrast between text and background colors, making the content readable for users with visual impairments.</li>
+                        <li class="dec"><b>Responsive Design:</b> The use of media queries ensures that the page is usable on a variety of devices and screen sizes, including mobile phones and tablets.</li>
+                    </ul>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="./validation_ST04.html">Student4 Validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                    <p><a href="../st/content_ST04.html">Vontent_ST04.</a> Click to go the page.</p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>During the implementation of the <b>sitemap.html</b>, <b>userprofile.html</b>, and <b>content_ST04.html</b> pages, several challenges were encountered that provided valuable learning experiences.</p>
+                    <p>One significant challenge was ensuring the responsiveness of the site map visualization in <b>sitemap.html</b>. The complex SVG structure required precise positioning and scaling to maintain clarity across different devices. This was resolved by extensively using CSS media queries and flexible SVG properties, allowing the site map to adapt seamlessly to various screen sizes. The lesson learned was the importance of thorough testing and iterative adjustments to achieve a responsive design that works well on all devices.</p>
+                    <p>For the <b>userprofile.html</b> page, managing the interactive tabbed interface and form validation posed initial difficulties. The JavaScript logic for switching between tabs and validating form inputs had to be carefully implemented to ensure a smooth user experience. By breaking down the functionality into smaller, manageable functions and thoroughly testing each part, these challenges were overcome. This reinforced the value of modular coding and rigorous testing to ensure robust functionality.</p>
+                    <p>In <b>content_ST04.html</b>, the challenge was to create a visually appealing and accessible layout for a large amount of content, including events, publications, and news. Using CSS Grid and Flexbox, a flexible and responsive layout was achieved. The lesson here was the effectiveness of modern CSS layout techniques in managing complex content structures while maintaining accessibility and usability.</p>
+                    <p>Overall, these challenges highlighted the importance of patience, attention to detail, and continuous learning in web development. Each obstacle provided an opportunity to deepen understanding of HTML, CSS, and JavaScript, ultimately leading to more resilient and user-friendly web pages.</p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                <p>The web pages created adhere to the regulations governing web page publication as outlined by Janet. These regulations emphasize the importance of accessibility, security, and user privacy. To ensure compliance, the following measures were taken</p> 
+                <ol>
+                    <li class="dec"><b>Accessibility:</b> The pages were designed with accessibility in mind, following the Web Content Accessibility Guidelines (WCAG). This includes the use of semantic HTML tags, alt text for images, and proper form labeling. Additionally, the pages were tested for color contrast and keyboard navigability to ensure they are usable by individuals with disabilities.</li>
+                    <li class="dec"><b>Security:</b> To protect user data and ensure secure communication, the pages were designed to be served over HTTPS. This encrypts data transmitted between the user and the server, safeguarding sensitive information. Furthermore, the forms on the pages were designed with input validation to prevent common security vulnerabilities such as SQL injection and cross-site scripting (XSS).</li>
+                    <li class="dec"><b>User Privacy:</b> The pages do not collect or store personal information without explicit user consent. Any data collected through forms is handled in accordance with privacy laws and regulations. Users are informed about the data being collected and how it will be used, ensuring transparency and compliance with privacy standards.</li>
+                </ol>
+                <p>By adhering to these regulations, the web pages ensure a safe, accessible, and user-friendly experience for all visitors.</p> 
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>Clariviz.com. (2025). Available at: <a href="https://www.clariviz.com/static/media/castlecoating-1.d234acf538d324de4b8f.jpg">https://www.clariviz.com/static/media/castlecoating-1.d234acf538d324de4b8f.jpg</a>[Accessed 10 Mar. 2025].</li>
+                        <li>Un.org. (2025). Available at: <a href="https://sdgs.un.org/sites/default/files/2023-03/screen_shot_2023-03-16_at_6.26.38_pm_0.png">https://sdgs.un.org/sites/default/files/2023-03/screen_shot_2023-03-16_at_6.26.38_pm_0.png</a> [Accessed 10 Mar. 2025].</li>
+                        <li>Un.org. (2025). Available at: <a href="https://sdgs.un.org/sites/default/files/2023-01/climate_change_2022_mitigation_of_climate_change.png">https://sdgs.un.org/sites/default/files/2023-01/climate_change_2022_mitigation_of_climate_change.png</a> [Accessed 10 Mar. 2025].</li>
+                        <li>Un.org. (2025). Available at: <a href="https://sdgs.un.org/sites/default/files/2023-09/un_climate_sdg_synergies_report-cover_1.png">https://sdgs.un.org/sites/default/files/2023-09/un_climate_sdg_synergies_report-cover_1.png</a> [Accessed 10 Mar. 2025].</li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#userProfile">Profile page </a></li>
+                        <li><a href="#siteMap">Sitemap page</a></li>
+                        <li><a href="#contentPage">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <!-- About Us Section -->
+            <div class="footer-column">
+              <h3>About Us</h3>
+              <p>
+                We are committed to ensuring access to affordable, reliable, and
+                clean energy for all, driving innovation, empowering communities,
+                and building a sustainable future.
+              </p>
+            </div>
+  
+            <div class="footer-column">
+              <h3>Explore</h3>
+              <ul class="footer-links">
+                <li><a href="/pages/home.html">Home</a></li>
+                <li><a href="./volunteer.html">Volunteer</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="./team.html">About us</a></li>
+                <li><a href="/pages/sitemap.html">SiteMap</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-column">
+              <h3>Support</h3>
+              <ul class="footer-links">
+                <li><a href="/pages/st/pageEditor_ST01.html">Student 01</a></li>
+                <li><a href="/pages/st/pageEditor_ST02.html">Student 02</a></li>
+                <li><a href="/pages/st/pageEditor_ST03.html">Student 03</a></li>
+                <li><a href="/pages/st/pageEditor_ST04.html">Student 04</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-column logo-column">
+              <div class="footer-logos">
+                <div class="energy-logo">
+                  <img
+                    src="/assets/home/ace-logo.svg"
+                    alt="Affordable and Clean Energy"
+                  />
+                </div>
+                <div class="un-logo">
+                  <img src="/assets/home/un-logo.svg" alt="United Nations" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p class="copyright">
+              Copyright © 2025 Team alFa. All rights reserved.
+            </p>
+            <div class="social-media">
+              <p>Follow us on</p>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" aria-label="TikTok"> <i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="Twitter">
+                  <i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
