@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student 3 - Sithumi Palihena</title>
+
+    <link rel="stylesheet" href="../../src/styles/st/pageEditor_ST03.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="../../src/styles/globle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header id="top">
+        <nav>
+            <img id="navlogo" src="../../assets/Globle/Logo.jpg" alt="Logo" />
+            <div class="hamburger">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="../volunteer.html">Volunteer</a></li>
+              <li><a href="../feedback.html">Feedback</a></li>
+              <li><a href="../team.html">About us</a></li>
+              <li><a href="#">Site map</a></li>
+            </ul>
+            <div class="profile">
+              <a href="/pages/userprofile.html">
+                <img
+                  id="User-profile"
+                  src="../../assets/Globle/User-profile.svg"
+                  alt="User Profile"
+                />
+              </a>
+            </div>
+          </nav>    
+        </header>
+
+    <section class="stud">
+        <h2>Sithumi Palihena, Student 3</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="Feedback">Feedback Page</h2>
+                    <h3>Technical Description</h3>
+                    <h4>1. HTML Structure and Key Tags</h4>
+                        <p>This page includes the basic HTML5 structure, starting with the &lt;!DOCTYPE html&gt;, followed by the &lt;html&gt;,&lt;head&gt;, and &lt;body&gt; tags.</p> 
+                        <p>It has a &lt;title&gt; tag within the &lt;head&gt; section, which sets the title of the webpage to "Feedback".</p> 
+                        <p>This page includes key sections like the &lt;header&gt; for branding and navigation, &lt;nav&gt; for the main menu links, and multiple &lt;div&gt;> elements that structure the content into separate feedback forms, organizing user input across different steps.</p> 
+                        <p>It includes a &lt;form&gt; element with &lt;input&gt; fields for text, email, and telephone inputs, a &lt;textarea&gt; for detailed feedback, and &lt;button&gt; elements for form submission and navigation, creating an organized and interactive user feedback experience.</p> 
+                        <p>Includes a file upload &lt;input type="file"&gt;, allowing users to upload images, videos, or documents as part of their feedback submission.</p> 
+                        <p>This includes &lt;div class="error-message"&gt; elements for providing real-time validation feedback, helping guide the user through form completion.</p> 
+                    <h4>2. CSS Properties</h4>
+                            <p><li>This page includes CSS properties like display: flex for layout structure, padding and margin for spacing, font-family and color for text styling, and background-color and border for visual distinction.</li></p>
+                    <h4>3. JavaScript Functions</h4>
+                    <p><li>Manages to navigate with back and next buttons, handles input validation errors, enables a clear button to reset fields, and supports image uploads.</li></p>
+                    <h3>Accessibility</h3>
+                    <p><li>The page utilizes meaningful HTML tags like &lt;header&gt;, &lt;nav&gt;, and &lt;form&gt; to provide a well-structured layout, improving the page's accessibility by ensuring screen readers can interpret the content accurately.</li></p>
+                    <p><li>Each input field is paired with a &lt;label&gt; tag, which is crucial for screen readers and ensures that visually impaired users can identify the fields correctly. It enhances the overall usability of the form.</li></p>
+                    <p><li>The page ensures that there is enough contrast between the text and background, which is important for users with visual impairments. Clear fonts and readable text sizes further enhance accessibility.</li></p>
+                    <p><li>The form displays clear and accessible error messages when users make mistakes in filling out the fields. These messages guide users on how to fix the issue, improving the user experience and preventing confusion.</li></p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="../st/validation_ST03.html">Feedback validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="../feedback.html">Feedback Page.</a></p>
+            </section>
+
+            <section>
+                <h2 id="team">Team Page</h2>
+                    <h3>Technical Description</h3>
+                    <h4>1. HTML Structure and Key Tags</h4>
+                        <p><li>The &lt;body&gt; tag Contains all visible content, including the background images, team slogan, and team member details.</li></p> 
+                        <p><li>The layout is divided into meaningful sections using &lt;div&gt; elements. The background_images div contains cloud images that create a visually appealing backdrop, while the trans_box div houses the motivational slogan. </li></p>
+                        <p><li>Each member's details are wrapped in &lt;a&gt; tags, making their profile images clickable. The &lt;img&gt; tag displays their photos, and an overlay effect reveals their contributions upon interaction, enhancing user</li></p>
+                        <p><li>Text formatting is applied through &lt;b&gt; tags to highlight names and roles, making the content more readable. The contributions of each team member are neatly structured using &lt;ul&gt; and &lt;li&gt; tags, ensuring a clear and organized presentation. This combination of structural divisions, text styling, and interactive elements creates an intuitive and visually appealing team page.</li></p>
+                <h4>2. CSS Properties</h4>
+                        <p><li>The CSS for the team page is designed to maintain a visually appealing and well-structured layout. The overall page uses a light blue background, ensuring a clean and inviting look. The body section centers content using display: flex while allowing vertical scrolling when necessary. Google Fonts (Poppins) is applied for a modern and professional typography style.</li></p>
+                        <p><li>Text styling is applied using .gray_text and .black_text, with distinct colors to highlight important phrases in the team's motto. The positioning of these elements is controlled with absolute values to maintain proper alignment.</li></p>
+                        <p><li>The .team_members section organizes profile cards in a flexbox layout, evenly spacing them. Each member's profile is structured using div elements containing an image and an overlay that reveals additional details upon hovering. The .overlay effect is implemented with a blur effect (backdrop-filter: blur(500px)) and transitions for smooth interaction.</li></p>
+                        <p><li>The .custom-list ensures that the contributions of each team member are neatly wrapped while allowing flexibility in arrangement. The .overlay is initially set to opacity: 0 and appears with a subtle transition when hovering over a team member's profile, enhancing user interaction.</li></p>
+                        <h3>Accessibility</h3>
+                        <p><li>Alt text is provided for images, ensuring they are accessible to visually impaired users. The chosen Poppins font and high-contrast color scheme improve readability.</li></p>
+                        <p><li>The high-contrast text and background improve readability for users with visual impairments. The hover effects on team member images provide visual feedback, enhancing the interactive experience.</li></p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="../st/validation_ST03.html"> Team validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="../team.html"> Team Page.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                    <h4>1. HTML Structure and Key Tags</h4>
+                        <p> <b>Document Navigation System:</b> The page utilizes anchor-based navigation with a series of buttons wrapped in &lt;a&gt; tags that link to section IDs. This creates an efficient in-page navigation system without requiring page reloads.</p>
+                        <p><b>Semantic Sectioning:</b> The content is organized using semantic &lt;section&gt; elements to logically separate yearly reports (2019-2024), enhancing document structure and accessibility.</p>
+                        <p><b>Container Pattern:</b>  The .info div containers wrap related content for each year, creating logical content groupings and enabling targeted styling.</p>
+                        <p><b>Media Integration: </b> Images are embedded using the &lt;img&gt; tag with appropriate class assignments and alt attributes for accessibility.</p>
+                    <h4>2. CSS Properties</h4>
+                        <p><b>Button Container Styling:</b> The .button_container class likely implements a horizontal arrangement of navigation buttons, possibly using flexbox or grid layout for responsive alignment.</p>
+                        <p><b> Information Block Styling:</b> The .info class appears to define consistent styling for each yearly report section, likely providing margins, padding, and possibly background colors to visually separate content.</p>
+                        <p><b> Image Scaling:</b> The .img class is applied to all images, suggesting consistent styling for proper scaling, alignment, and possibly responsive behavior.</p>
+                        <p><b>Back-to-Top Navigation:</b> The page includes a "Go top" link at the bottom that returns users to the page header, enhancing navigation usability for longer content.</p>
+
+                        <h3>Accessibility</h3>
+                        <p><b> Language Attribute:</b> The inclusion of lang="en" in the HTML tag properly identifies the document's language for assistive technologies.</p>
+                        <p><b>Anchor Links:</b> The page includes internal navigation with anchor links, potentially helping users jump to specific content sections.</p>
+                        <p><b>Image Accessibility Features:</b> All images include descriptive alt text that meaningfully communicates the content and purpose of each visual. The alt attributes provide context-specific information about the energy statistics and trends shown in each graphic, ensuring screen reader users can access the same information as visual users.</p>
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="../st/validation_ST03.html">Content validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="../st/content_ST03.html">Content Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p><b>Technical Issues: </b>Encountering bugs or unexpected behavior in the code  and fixing these issues required a methodical approach to debugging and testing.</p>
+                    <p><b>Validating Code Against Standards: </b>Fixing validation errors to meet W3C guidelines was challenging due to issues like unclosed tags, improper nesting, and deprecated attributes, requiring thorough debugging and code refinement.Ensuring code complies with validation standards improves accessibility, search engine optimization, and maintainability.</p>
+                    <p><b>Reusability and Uniqueness: </b>Balancing reusability with uniqueness was a challenge, as using reusable components sometimes led to generic designs that lacked originality. Striving to maintain consistency across pages while ensuring each page had a distinct and tailored look required careful consideration of when to use common elements and when to customize them.Striking a balance between reusability and customization creates a user-friendly, visually appealing design while maintaining code efficiency.</p>
+
+
+
+
+
+
+                    </p>
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 3</li>
+                    <ul> 
+                        <li><a href="#Feedback">Feedback page</a></li>
+                        <li><a href="#team">Team page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <!-- About Us Section -->
+            <div class="footer-column">
+              <h3>About Us</h3>
+              <p>
+                We are committed to ensuring access to affordable, reliable, and
+                clean energy for all, driving innovation, empowering communities,
+                and building a sustainable future.
+              </p>
+            </div>
+  
+            <div class="footer-column">
+              <h3>Explore</h3>
+              <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./volunteer.html">Volunteer</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="./team.html">About us</a></li>
+                <li><a href="#">SiteMap</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-column">
+              <h3>Support</h3>
+              <ul class="footer-links">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-column logo-column">
+              <div class="footer-logos">
+                <div class="energy-logo">
+                  <img
+                    src="../../assets/home/ace-logo.svg"
+                    alt="Affordable and Clean Energy"
+                  />
+                </div>
+                <div class="un-logo">
+                  <img src="../../assets/home/un-logo.svg" alt="United Nations" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p class="copyright">
+              Copyright © 2025 Team alFa. All rights reserved.
+            </p>
+            <div class="social-media">
+              <p>Follow us on</p>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
