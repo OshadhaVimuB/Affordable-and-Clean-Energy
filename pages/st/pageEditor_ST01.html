@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student 1 - Sethumdee Narampanawa</title>
+
+    <link rel="stylesheet" href="../../src/styles/st/pageEditor_ST01.css"> <!-- External CSS link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../src/styles/globle.css" />
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header id="top">
+        <nav>
+            <img id="navlogo" src="../../assets/validation_ST01/Logo.jpg" alt="Logo" />
+            <div class="hamburger">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+              <li><a href="../home.html">Home</a></li>
+              <li><a class="active" href="../volunteer.html">Volunteer</a></li>
+              <li><a href="../feedback.html">Feedback</a></li>
+              <li><a href="../team.html">About us</a></li>
+              <li><a href="#">Site map</a></li>
+            </ul>
+            <div class="profile">
+              <a href="/pages/userprofile.html">
+                <img
+                  id="User-profile"
+                  src="../../assets/validation_ST01/User-profile.svg"
+                  alt="User Profile"
+                />
+              </a>
+            </div>
+          </nav>
+    </header>
+
+    <section class="stud">
+        <h2>Sethumdee Narampanawa, student 1</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">Splash Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The splash screen is designed using HTML and CSS</p>
+                        <p>HTML techniques
+                            <ul>
+                                <li>The document uses (!DOCTYPE html) for HTML5 standards.</li>
+                                <li>CSS files are linked using (link rel="stylesheet") for global and splash-specific styles.</li>
+                                <li>(h1) contains the main title, with a text animation effect for emphasis.</li>
+                                <li>(p) under (div class="mission") describes the mission clearly and concisely.</li>
+                                <li>(h3) and (ul) list the group members in an organized way.</li>
+                            </ul>
+                        </p>
+                        <p>CSS techniques
+                            <ul>
+                                <li>The (.splash) section sets a full-page background image.</li>
+                                <li>(background-size: cover;) ensures the image adapts to different screen sizes.</li>
+                                <li>(text-align: center;) aligns text for better readability.</li>
+                                <li>(font-size) and (font-weight) create a structured hierarchy in headings and body text.</li>
+                                <li>(.splash_inner) uses (display: flex; flex-direction: column; align-items: center; justify-content: center;) to center all content vertically and horizontally.</li>
+                                <li>.text-focus-in and .text-focus-in-mission use CSS keyframe animations to create a fade-in effect for a smooth user experience.</li>
+                            </ul>
+                        </p>
+
+                    
+                    <h3>Accessibility</h3>
+                        <p>These techniques below improve the accessibility of the splash screen.</p>
+                        <p>
+                            <ul>
+                                <li>High contrast text - White text on a dark overlay improves readability.</li>
+                                <li>Structured content - HTML elements (h1,p,ul) are used for structured content.</li>
+                                <li>Flexible layout - The use of max-width and text-align: center; ensures text remains legible on different screen sizes.</li>
+                                <li>Readable timing - 4 seconds delay before rederecting to home page gives time to read the content.</li>
+                                <li>Clear typography - Font is clear and legible (font-family: ) </li>
+                                <li>Flexible layout with vh units - Ensures the splash screen fits all screen sizes, including mobile devices.</li>
+                            </ul>
+                        </p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="../st/validation_ST01.html#Splash screen">Include a link to the validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="../splash.html">Html link for splash screen.</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Volunteer Page is implemented using HTML,CSS and JS to provide a structured and visually appealing interface.</p>
+                        <p>HTML elements
+                            <ul>
+                                <li>(header and nav) - Contains a logo (img), a navigation menu (ul), and a responsive hamburger menu (div class="hamburger").</li>
+                                <li>(section class="volunteer-section") - Displays volunteer programs with a header (h2), sorting button (button class="best-match-btn"), and program cards (div class="program-container")</li>
+                                <li>(div class="program-card") - Each card includes an image (img), a title (h3), description buttons (button class="info-btn">), and action buttons (button class="apply-btn")</li>
+                                <li>(section id="reviews") - Displays user reviews with ratings, names, and dates.</li>            
+                            </ul>
+                        </p>
+                        <p>CSS techniques
+                            <ul>
+                                <li>Global Styling - Ensures consistent spacing and typography across the page.</li>
+                                <li>Navigation Bar - (Uses display: flex;) for proper alignment.</li>
+                                <li>Dropdown Menu - Becomes visible on interaction (display: none; initially).</li>
+                                <li>Footer - Uses (display: flex;) ,j(ustify-content: space-between;) for equal spacing.</li>
+                            </ul>
+                        </p>
+                         
+
+                    <h3>Accessibility</h3>
+                        <p>These techniques below improve the accessibility of the volunteer page.
+                            <ul>
+                                <li>Semantic HTML for better screen reader navigation.</li>
+                                <li>Keyboard Navigation for dropdown menus and buttons.</li>
+                                <li>Alt text on images for visually impaired users.</li>
+                                <li>High Contrast and optimized font sizes for readability.</li>
+                            </ul>
+                        </p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="../st/validation_ST01.html#Volunteer page">Include a link to the validation page</a>, </p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="../volunteer.html">Html link for volunteer page.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Content page is implemented using HTML,CSS and JS to provide a structured and visually appealing interface.</p>
+                        <p>HTML elements
+                            <ul>
+                                <li>(header & nav) - Houses the logo, navigation links, and a hamburger menu for mobile-friendly navigation.</li>
+                                <li>(section class="News") - Contains news articles.</li>
+                                <li>(div class="program-card") - Displays each news item with an image, title, and “Read” button linking to full articles.</li>
+
+                            </ul>
+                        </p>
+                        <p>CSS Techniques
+                            <ul>
+                                <li>Global Styling - Consistent spacing, typography, and box-sizing.</li>
+                                <li>Cards Design - (.program-card) applies box-shadow, border-radius, and flexbox for a clean, structured layout.</li>
+                                <li>Dropdown Menu - (.dropdown-content) is initially hidden and appears on interaction.</li>
+                            </ul>
+                        </p>                
+                        <h3>Accessibility</h3>
+                        <p>These techniques below improve the accessibility of the news content.</p>
+                        <ul>
+                            <li>Alt Text for Images - Ensures visually impaired users get meaningful descriptions.</li>
+                            <li>Semantic HTML - Uses (header), (nav), and (section) for better screen reader support.</li>
+                            <li>High Contrast & Readability - Adequate color contrast, readable font sizes, and clear button styles.</li>
+                        </ul>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="../st/validation_ST01.html#content page">Include a link to the validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="../st/content_ST01.html">Html link to content page.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>During the implementation process, several challenges were encountered, requiring troubleshooting and problem-solving skills.</p>
+                    <u>
+                        <li>The dropdown menu for selecting years initially did not function as expected, remaining hidden even when clicked. This issue was traced to the JavaScript function controlling the dropdown. To resolve this, the toggleDropdown() function was updated to correctly add and remove the .show class, ensuring the menu displayed when needed.</li>
+                        <li>The news section cards were not aligning properly, especially on smaller screens. This was due to improper CSS layout settings. The issue was resolved by modifying the .program-container using display: flex with justify-content: center; and align-items: stretch;. Additionally, gap: 30px; was added to create proper spacing between the cards.</li>
+                        <li>The images inside the program cards did not fit correctly, often appearing stretched or distorted. This was due to inconsistent aspect ratios. The issue was resolved by adding the object-fit: cover; property to the image styling, ensuring that all images maintained their proportions while properly filling their designated space.</li>
+                    </u>
+                    <p>Lessons Learned
+                        <ul>
+                            <li>Debugging JavaScript requires careful inspection using browser developer tools.</li>
+                            <li>Proper CSS structuring, including flexbox and grid, significantly improves layout consistency.</li>
+                        </ul>
+                    </p>
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                     
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                
+                    <ul class="ref">
+                        <li><a href="https://www.w3schools.com/tags/tag_button.asp" target="_blank">W3Schools. (n.d.). HTML Button Tag. Retrieved from https://www.w3schools.com/tags/tag_button.asp</a></li>
+
+                       
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        
+            <ul class="top-level-ul">
+                
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash page</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <!-- About Us Section -->
+            <div class="footer-column">
+              <h3>About Us</h3>
+              <p>
+                We are committed to ensuring access to affordable, reliable, and
+                clean energy for all, driving innovation, empowering communities,
+                and building a sustainable future.
+              </p>
+            </div>
+  
+            <div class="footer-column">
+              <h3>Explore</h3>
+              <ul class="footer-links">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./volunteer.html">Volunteer</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="./team.html">About us</a></li>
+                <li><a href="./sitemap.html">SiteMap</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-column">
+              <h3>Page Editors</h3>
+              <ul class="footer-links">
+                <li><a href="./st/pageEditor_ST01.html">Student 01</a></li>
+                <li><a href="./st/content_ST02.html">Student 02</a></li>
+                <li><a href="./st/content_ST03.html">Student 03</a></li>
+                <li><a href="./st/content_ST04.html">Student 04</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-column logo-column">
+              <div class="footer-logos">
+                <div class="energy-logo">
+                  <img
+                    src="../../assets/validation_ST01/ace-logo.svg"
+                    alt="Affordable and Clean Energy"
+                  />
+                </div>
+                <div class="un-logo">
+                  <img src="../../assets/validation_ST01/un-logo.svg" alt="United Nations" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p class="copyright">
+              Copyright © 2025 Team alFa. All rights reserved.
+            </p>
+            <div class="social-media">
+              <p>Follow us on</p>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
