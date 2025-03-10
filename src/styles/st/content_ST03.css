@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    background: linear-gradient(rgba(103,189,220,0.9), rgba(228,240,254, 0.5));
+    align-items: center;
+    flex-direction: column; /* Align content vertically */
+    height: 100%; /* Full height of viewport */
+    width: 100%;   /* Full width */
+    margin: 0;
+    padding-top: 100px; /* Adjust this value to move it further down */
+    font-family: "Poppins", sans-serif;
+}
+#User-profile{
+    position: relative;
+    right: 100px;
+  
+}
+h1{
+    text-align: center;
+    color: #2c3e50;
+}
+.button_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.button-style {
+    
+    padding: 10px 25px;
+    background-color: #1e84a9; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;    
+    border-color: #0000009d;    
+    border-width: 40px ; 
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-style:hover {
+    background-color: #1e84a9;     
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+
+section {
+    background-color: #ffffffd7;
+    width: 80%;
+    padding: 30px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    color: #0e384779;
+}
+section:hover{
+    background-color: whitesmoke;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9); /* Adds a subtle shadow */
+}
+.img{
+    float: left;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 290px;
+    width: 400px;
+}
+h2{
+    color: #1e84a9;
+    text-align: center;
+}
+li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #1e84a9; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #096a8e; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+footer{
+    width: 100%;
+}
