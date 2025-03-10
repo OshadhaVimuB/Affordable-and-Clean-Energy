@@ -1,77 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/styles/splash.css" />
     <title>Affordable and Clean Energy</title>
-    <script>
-      // Redirect to 'volunteer.html' after 4 seconds (4000 milliseconds)
-      setTimeout(function () {
-        window.location.href = "./home.html";
-      }, 4000);
-    </script>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Times New Roman, sans-serif;
-        text-align: center;
-        color: white; /* Changed text color to white for better visibility */
-      }
-      .container {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        background: url("../assets/splash/R.jpeg") no-repeat center center/cover;
-      }
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 30px;
-      }
-      h1 {
-        font-size: 40px;
-        font-weight: bold;
-        margin-top: 10px;
-        color: white;
-        text-decoration: underline;
-      }
-      p {
-        font-size: 20px;
-        max-width: 700px;
-        margin-top: 10px;
-        color: white;
-      }
-      .group-members {
-        margin-top: 30px;
-        font-size: 25px; /* Reduced size for better layout */
-        color: white;
-      }
-    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="overlay">
-        <h1>Affordable and Clean Energy</h1>
-        <p>
-          Our mission is to promote clean, affordable, and sustainable energy
-          solutions for all. By harnessing renewable energy sources, we aim to
-          reduce environmental impact and ensure a brighter, greener future for
-          generations to come.
-        </p>
-        <div class="group-members">
-          <strong>Group Members:</strong>
-
-          <br />Sethumdee Narampanawa <br />Sithumi Palihena <br />Visula
-          Siriwardana <br />Oshadha Vimukthi
+    <section class="splash">
+      <div class="splash_inner">
+        <h1 class="text-focus-in">Affordable and Clean Energy</h1>
+        <div class="mission">
+          <p class="text-focus-in-mission">
+            Our mission is to promote clean, affordable, and sustainable energy
+            solutions for all. By harnessing renewable energy sources, we aim to
+            reduce environmental impact and ensure a brighter, greener future
+            for generations to come.
+          </p>
         </div>
+
+        <h3 class="teamTitle">Group Members</h3>
+        <ul class="teamMembers">
+          <li>Sethumde Narampanawa</li>
+          <li>Oshadha Vimukthi</li>
+          <li>Sithumi Palihena</li>
+          <li>Visula Siriwardana</li>
+        </ul>
       </div>
-    </div>
+    </section>
+    <script src="../src/js/splash.js"></script>
   </body>
 </html>
