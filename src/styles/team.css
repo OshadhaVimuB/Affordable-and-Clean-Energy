@@ -9,7 +9,7 @@ body {
   overflow-x: hidden; /* Allows vertical scrolling only when needed */
 }
 .background_images {
-  background-color: #d0f2fe;
+  background-color: #074f6b;
 }
 
 .background_images img {
@@ -84,14 +84,18 @@ body {
 .team_members div {
   text-align: center;
 }
-
+h2{
+  display: none;
+}
 #sethumdee,
 #oshadha,
 #sithumi,
 #visula {
   width: 250px; /* Fixed width */
   height: 300px; /* Fixed height */
+ 
 }
+
 .custom-list {
   display: flex;
   flex-wrap: wrap;
@@ -112,6 +116,7 @@ body {
   display: inline-block; /* Prevents unnecessary extra space */
   width: fit-content; /* Ensures the container wraps tightly around the image */
   height: fit-content;
+
 }
 .oshadha {
   position: relative;
@@ -124,6 +129,12 @@ body {
   display: inline-block; /* Prevents unnecessary extra space */
   width: fit-content; /* Ensures the container wraps tightly around the image */
   height: fit-content;
+}
+
+  .sethumdee:hover, .oshadha:hover, .sithumi:hover, .visula:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.05);
 }
 .overlay {
   position: absolute;
@@ -142,6 +153,7 @@ body {
   backdrop-filter: blur(500px); /* Adds the blur effect */
   background-color: rgba(187, 170, 170, 0.4); /* Semi-transparent background */
 }
+
 .content {
   position: absolute;
   top: 30%;
